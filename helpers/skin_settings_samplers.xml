@@ -53,12 +53,6 @@ Description:
                       <SetVariable name="IsEqual">1</SetVariable>
                       <SetVariable name="Width">25f</SetVariable>
                     </Template>
-                    <Template src="skin:../LateNightMini/helpers/skin_settings_numToggle_header.xml">
-                      <SetVariable name="Text">16</SetVariable>
-                      <SetVariable name="Setting">[LateNightMini],show_16samplers</SetVariable>
-                      <SetVariable name="IsEqual">1</SetVariable>
-                      <SetVariable name="Width">30f</SetVariable>
-                    </Template>
                     <WidgetGroup><Size>0me,0f</Size></WidgetGroup>
                   </Children>
                 </WidgetGroup>

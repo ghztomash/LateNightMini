@@ -32,8 +32,6 @@
                 <MinimumSize>100,</MinimumSize>
                 <Children>
 
-                  <Template src="skin:../LateNightMini/decks/preview_deck.xml"/>
-
                   <WidgetGroup><!--SearchBox + Library expand toggle -->
                     <Layout>horizontal</Layout>
                     <SizePolicy>min,max</SizePolicy>

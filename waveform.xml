@@ -157,15 +157,6 @@
         </Connection>
       </WidgetGroup>
 
-      <WidgetGroup>
-        <ObjectName>BeatgridControls</ObjectName>
-        <Layout>vertical</Layout>
-        <SizePolicy>max,me</SizePolicy>
-        <Connection>
-          <ConfigKey persist="true">[Skin],show_beatgrid_controls</ConfigKey>
-          <BindProperty>visible</BindProperty>
-        </Connection>
-      </WidgetGroup><!-- BeatgridControls -->
     </Children>
   </WidgetGroup>
 </Template>
