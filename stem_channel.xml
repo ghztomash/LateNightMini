@@ -25,13 +25,13 @@
         <NumberStates>2</NumberStates>
         <State>
           <Number>0</Number>
-          <Unpressed scalemode="STRETCH">skins:LateNightMini/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill.svg</Unpressed>
-          <Pressed scalemode="STRETCH">skins:LateNightMini/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Pressed>
+          <Unpressed scalemode="STRETCH">skins:LateNight/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill.svg</Unpressed>
+          <Pressed scalemode="STRETCH">skins:LateNight/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Pressed>
         </State>
         <State>
           <Number>1</Number>
-          <Unpressed scalemode="STRETCH">skins:LateNightMini/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Unpressed>
-          <Pressed scalemode="STRETCH">skins:LateNightMini/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Pressed>
+          <Unpressed scalemode="STRETCH">skins:LateNight/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Unpressed>
+          <Pressed scalemode="STRETCH">skins:LateNight/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Pressed>
         </State>
         <Connection>
           <ButtonState>LeftButton</ButtonState>
@@ -53,8 +53,8 @@
       <KnobComposed>
         <TooltipId>StemVolumeKnob</TooltipId>
         <Size>26f,26f</Size>
-        <Knob>skins:LateNightMini/<Variable name="KnobScheme"/>/knobs/knob_indicator_<Variable name="KnobIndicator"/>_orange.svg</Knob>
-        <BackPath>skins:LateNightMini/<Variable name="KnobScheme"/>/knobs/knob_bg_fx.svg</BackPath>
+        <Knob>skins:LateNight/<Variable name="KnobScheme"/>/knobs/knob_indicator_<Variable name="KnobIndicator"/>_orange.svg</Knob>
+        <BackPath>skins:LateNight/<Variable name="KnobScheme"/>/knobs/knob_bg_fx.svg</BackPath>
         <MinAngle><Variable name="PotiMinAngle"/></MinAngle>
         <MaxAngle><Variable name="PotiMaxAngle"/></MaxAngle>
         <ArcUnipolar>true</ArcUnipolar>
@@ -85,13 +85,13 @@
         <NumberStates>2</NumberStates>
         <State>
           <Number>0</Number>
-          <Unpressed scalemode="STRETCH">skins:LateNightMini/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill.svg</Unpressed>
-          <Pressed scalemode="STRETCH">skins:LateNightMini/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Pressed>
+          <Unpressed scalemode="STRETCH">skins:LateNight/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill.svg</Unpressed>
+          <Pressed scalemode="STRETCH">skins:LateNight/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Pressed>
         </State>
         <State>
           <Number>1</Number>
-          <Unpressed scalemode="STRETCH">skins:LateNightMini/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Unpressed>
-          <Pressed scalemode="STRETCH">skins:LateNightMini/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Pressed>
+          <Unpressed scalemode="STRETCH">skins:LateNight/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Unpressed>
+          <Pressed scalemode="STRETCH">skins:LateNight/<Variable name="BtnScheme"/>/buttons/btn_<Variable name="BtnType"/>_eqkill_active.svg</Pressed>
         </State>
         <Connection>
           <ConfigKey>[QuickEffectRack1_<Variable name="StemGroup"/>],enabled</ConfigKey>
@@ -104,8 +104,8 @@
       <KnobComposed>
         <TooltipId>QuickEffectRack_super1</TooltipId>
         <Size>26f,26f</Size>
-        <Knob>skins:LateNightMini/<Variable name="KnobScheme"/>/knobs/knob_indicator_<Variable name="KnobIndicator"/>_<Variable name="KnobColorQuickEffect"/>.svg</Knob>
-        <BackPath>skins:LateNightMini/<Variable name="KnobScheme"/>/knobs/knob_bg_fx.svg</BackPath>
+        <Knob>skins:LateNight/<Variable name="KnobScheme"/>/knobs/knob_indicator_<Variable name="KnobIndicator"/>_<Variable name="KnobColorQuickEffect"/>.svg</Knob>
+        <BackPath>skins:LateNight/<Variable name="KnobScheme"/>/knobs/knob_bg_fx.svg</BackPath>
         <MinAngle><Variable name="PotiMinAngle"/></MinAngle>
         <MaxAngle><Variable name="PotiMaxAngle"/></MaxAngle>
         <ArcRadius><Variable name="ArcRadiusSmall"/></ArcRadius>

@@ -103,7 +103,7 @@
                   </PushButton>
                 </Children>
                 <Connection>
-                  <ConfigKey persist="true">[LateNightMini],show_sync_button_compact</ConfigKey>
+                  <ConfigKey persist="true">[LateNight],show_sync_button_compact</ConfigKey>
                   <BindProperty>visible</BindProperty>
                 </Connection>
               </WidgetGroup><!-- SyncBoxCompact -->
@@ -118,7 +118,7 @@
             <SizePolicy>min,min</SizePolicy>
             <Children>
 
-              <WidgetStack currentpage="[LateNightMini],show_sync_button_compact" persist="true">
+              <WidgetStack currentpage="[LateNight],show_sync_button_compact" persist="true">
                 <ObjectName>RateStack<Variable name="Group"/></ObjectName>
                 <Children><!-- Rate slider + range displays with Sync button -->
 
@@ -146,8 +146,8 @@
                             <Size>40f,95f</Size>
                             <Pos>10,2</Pos>
                             <TooltipId>rate</TooltipId>
-                            <Handle scalemode="STRETCH_ASPECT">skins:LateNightMini/<Variable name="SliderScheme"/>/sliders/knob_pitch_deck.svg</Handle>
-                            <Slider scalemode="STRETCH_ASPECT">skins:LateNightMini/<Variable name="SliderScheme"/>/sliders/slider_pitch_deck_compact.svg</Slider>
+                            <Handle scalemode="STRETCH_ASPECT">skins:LateNight/<Variable name="SliderScheme"/>/sliders/knob_pitch_deck.svg</Handle>
+                            <Slider scalemode="STRETCH_ASPECT">skins:LateNight/<Variable name="SliderScheme"/>/sliders/slider_pitch_deck_compact.svg</Slider>
                             <Horizontal>false</Horizontal>
                             <BarWidth><Variable name="BarWidth"/></BarWidth>
                             <BarMargins><Variable name="BarMarginPitch"/></BarMargins>
@@ -178,7 +178,7 @@
                     </Children>
                   </WidgetGroup><!-- Rate controls (no Sync button) -->
 
-                  <WidgetGroup trigger="[LateNightMini],show_sync_button_compact" on_hide_select="0"><!-- Rate slider + range displays with Sync button -->
+                  <WidgetGroup trigger="[LateNight],show_sync_button_compact" on_hide_select="0"><!-- Rate slider + range displays with Sync button -->
                     <ObjectName>RateSliderBoxCompact</ObjectName>
                     <Layout>stacked</Layout>
                     <SizePolicy>max,me</SizePolicy>
@@ -201,8 +201,8 @@
                             <Size>40f,79f</Size>
                             <Pos>10,2</Pos>
                             <TooltipId>rate</TooltipId>
-                            <Handle scalemode="STRETCH_ASPECT">skins:LateNightMini/<Variable name="SliderScheme"/>/sliders/knob_pitch_deck.svg</Handle>
-                            <Slider scalemode="STRETCH_ASPECT">skins:LateNightMini/<Variable name="SliderScheme"/>/sliders/slider_pitch_deck_compact_sync.svg</Slider>
+                            <Handle scalemode="STRETCH_ASPECT">skins:LateNight/<Variable name="SliderScheme"/>/sliders/knob_pitch_deck.svg</Handle>
+                            <Slider scalemode="STRETCH_ASPECT">skins:LateNight/<Variable name="SliderScheme"/>/sliders/slider_pitch_deck_compact_sync.svg</Slider>
                             <Horizontal>false</Horizontal>
                             <BarWidth><Variable name="BarWidth"/></BarWidth>
                             <BarMargins><Variable name="BarMarginPitch"/></BarMargins>

@@ -22,7 +22,7 @@
                 <Layout>stacked</Layout>
                 <Size>40f,20f</Size>
                 <Children>
-                  <Template src="skins:LateNightMini/controls/button_2state.xml">
+                  <Template src="skins:LateNight/controls/button_2state.xml">
                     <SetVariable name="TooltipId">vinylcontrol_enabled_status</SetVariable>
                     <SetVariable name="ObjectName">Blank</SetVariable>
                     <SetVariable name="Size">40f,20f</SetVariable>
@@ -31,7 +31,7 @@
                   <!-- &#8202; is a hack to push text labels to the left or right
                        because the kerning of some letters/numbers destroys the desired
                        effect of center 'Align' and 'text-alignment' -->
-                  <Template src="skins:LateNightMini/controls/button_4state_display.xml">
+                  <Template src="skins:LateNight/controls/button_4state_display.xml">
                     <SetVariable name="ObjectName">VinylStatus</SetVariable>
                     <SetVariable name="Size">40f,20f</SetVariable>
                     <SetVariable name="state_0_text">&#8202;VINYL&#8202;</SetVariable>
@@ -44,7 +44,7 @@
               </WidgetGroup>
 
 
-              <Template src="skins:LateNightMini/controls/button_3state_persist.xml">
+              <Template src="skins:LateNight/controls/button_3state_persist.xml">
                 <SetVariable name="TooltipId">vinylcontrol_mode</SetVariable>
                 <SetVariable name="ObjectName">VinylModeButton</SetVariable>
                 <SetVariable name="Size">46f,20f</SetVariable>
@@ -54,7 +54,7 @@
                 <SetVariable name="ConfigKey"><Variable name="Group"/>,vinylcontrol_mode</SetVariable>
               </Template>
 
-              <Template src="skins:LateNightMini/controls/button_3state_persist.xml">
+              <Template src="skins:LateNight/controls/button_3state_persist.xml">
                 <SetVariable name="TooltipId">vinylcontrol_cueing</SetVariable>
                 <SetVariable name="ObjectName">VinylCueButton</SetVariable>
                 <SetVariable name="Size">32f,20f</SetVariable>
@@ -64,7 +64,7 @@
                 <SetVariable name="ConfigKey"><Variable name="Group"/>,vinylcontrol_cueing</SetVariable>
               </Template>
 
-              <Template src="skins:LateNightMini/controls/button_2state.xml">
+              <Template src="skins:LateNight/controls/button_2state.xml">
                 <SetVariable name="TooltipId">passthrough_enabled</SetVariable>
                 <SetVariable name="ObjectName">PassthroughButton</SetVariable>
                 <SetVariable name="Size">35f,20f</SetVariable>
