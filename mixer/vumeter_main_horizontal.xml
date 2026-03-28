@@ -1,0 +1,69 @@
+<!DOCTYPE template>
+<!--
+  Description:
+    A compact stereo master VU meter for horizontal layouts such as the toolbar.
+    This intentionally follows the CPU load meter structure because the regular
+    deck VU art is vertical-only.
+-->
+<Template>
+  <WidgetGroup>
+    <ObjectName>ToolbarMainVuMeter</ObjectName>
+    <Layout>vertical</Layout>
+    <SizePolicy>min,min</SizePolicy>
+    <Children>
+      <WidgetGroup>
+        <ObjectName>ToolbarMainVuMeterLeft</ObjectName>
+        <Size>61f,7f</Size>
+        <Layout>vertical</Layout>
+        <Children>
+          <VuMeter>
+            <TooltipId>main_VuMeterL</TooltipId>
+            <Size>59f,5f</Size>
+            <PathBack>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/latency_bg.png</PathBack>
+            <PathVu>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/latency_over.png</PathVu>
+            <Horizontal>true</Horizontal>
+            <PeakHoldSize>5</PeakHoldSize>
+            <PeakHoldTime>500</PeakHoldTime>
+            <PeakFallTime>100</PeakFallTime>
+            <PeakFallStep>1</PeakFallStep>
+            <Connection>
+              <ConfigKey>[Main],vu_meter_left</ConfigKey>
+            </Connection>
+          </VuMeter>
+        </Children>
+        <Connection>
+          <ConfigKey>[Main],peak_indicator_left</ConfigKey>
+          <BindProperty>highlight</BindProperty>
+        </Connection>
+      </WidgetGroup>
+
+      <WidgetGroup><Size>1min,2f</Size></WidgetGroup>
+
+      <WidgetGroup>
+        <ObjectName>ToolbarMainVuMeterRight</ObjectName>
+        <Size>61f,7f</Size>
+        <Layout>vertical</Layout>
+        <Children>
+          <VuMeter>
+            <TooltipId>main_VuMeterR</TooltipId>
+            <Size>59f,5f</Size>
+            <PathBack>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/latency_bg.png</PathBack>
+            <PathVu>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/latency_over.png</PathVu>
+            <Horizontal>true</Horizontal>
+            <PeakHoldSize>5</PeakHoldSize>
+            <PeakHoldTime>500</PeakHoldTime>
+            <PeakFallTime>100</PeakFallTime>
+            <PeakFallStep>1</PeakFallStep>
+            <Connection>
+              <ConfigKey>[Main],vu_meter_right</ConfigKey>
+            </Connection>
+          </VuMeter>
+        </Children>
+        <Connection>
+          <ConfigKey>[Main],peak_indicator_right</ConfigKey>
+          <BindProperty>highlight</BindProperty>
+        </Connection>
+      </WidgetGroup>
+    </Children>
+  </WidgetGroup>
+</Template>

@@ -111,6 +111,9 @@
         </Connection>
       </StatusLight>
 
+      <Template src="skin:../LateNightMini/mixer/vumeter_main_horizontal.xml"/>
+      <WidgetGroup><Size>7f,1min</Size></WidgetGroup>
+
       <WidgetGroup>
         <ObjectName>ClockWidget</ObjectName>
         <Layout>horizontal</Layout>
