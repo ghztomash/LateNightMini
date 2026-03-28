@@ -63,32 +63,6 @@ Description:
                     </Connection>
                   </WidgetGroup>
 
-                  <!-- un-hide mixer, hint + toggle -->
-                  <PushButton>
-                    <TooltipId>show_mixer</TooltipId>
-                    <ObjectName>SkinSettingsMixerToggle</ObjectName>
-                    <Size>180me,18f</Size>
-                    <NumberStates>2</NumberStates>
-                    <State>
-                      <Number>0</Number>
-                      <Text>  hide mixer to select  </Text>
-                      <Alignment>left</Alignment>
-                    </State>
-                    <State>
-                      <Number>1</Number>
-                      <Alignment>left</Alignment>
-                    </State>
-                    <Connection>
-                      <ConfigKey persist="true">[Skin],show_mixer</ConfigKey>
-                      <Transform><Not/></Transform>
-                      <ButtonState>LeftButton</ButtonState>
-                    </Connection>
-                    <Connection>
-                      <ConfigKey persist="true">[Skin],show_mixer</ConfigKey>
-                      <BindProperty>visible</BindProperty>
-                    </Connection>
-                  </PushButton>
-
                   <!-- FULL / Compact / mini Deck -->
                   <WidgetGroup>
                     <ObjectName>DeckSizeToggles</ObjectName>
@@ -118,7 +92,6 @@ Description:
             </Children>
           </WidgetGroup><!-- DeckSizeSettings -->
 <!-- Deck size selectors -->
-
 
 <!-- Deck Options FULL / Compact / mini -->
           <WidgetGroup>
@@ -184,8 +157,6 @@ Description:
             </Children>
           </WidgetGroup>
 <!-- Deck Options FULL / Compact / mini -->
-
-
 
 <!-- Other skin options -->
           <WidgetGroup>
@@ -264,88 +235,6 @@ Description:
               </WidgetGroup>
             </Children>
           </WidgetGroup><!-- Waveforms -->
-
-          <WidgetGroup>
-            <ObjectName>SkinSettingsSeparator</ObjectName>
-            <Size>1min,12f</Size>
-          </WidgetGroup>
-
-          <!--  Mixer -->
-          <WidgetGroup>
-            <ObjectName></ObjectName>
-            <SizePolicy>me,f</SizePolicy>
-            <Layout>stacked</Layout>
-            <Children>
-              <!-- translucent cover when Library is maximized -->
-              <Template src="skin:../LateNightMini/helpers/skin_settings_cover.xml">
-                <SetVariable name="Setting">[Skin],show_maximized_library</SetVariable>
-              </Template>
-
-              <WidgetGroup>
-                <SizePolicy>me,min</SizePolicy>
-                <Layout>vertical</Layout>
-                <Children>
-                  <Template src="skin:../LateNightMini/helpers/skin_settings_labelbutton_2state.xml">
-                    <SetVariable name="Text">Mixer</SetVariable>
-                    <SetVariable name="Setting">[Skin],show_mixer</SetVariable>
-                    <SetVariable name="TooltipId">show_mixer</SetVariable>
-                    <SetVariable name="Width">190me</SetVariable>
-                  </Template>
-
-                  <WidgetGroup>
-                    <ObjectName>SkinSettingsCategory</ObjectName>
-                    <SizePolicy>me,f</SizePolicy>
-                    <Layout>stacked</Layout>
-                    <Children>
-                      <!-- translucent cover when Channel Mixer is hidden -->
-                      <Template src="skin:../LateNightMini/helpers/skin_settings_cover_inverted.xml">
-                        <SetVariable name="Setting">[Skin],show_mixer</SetVariable>
-                      </Template>
-
-                      <WidgetGroup>
-                        <SizePolicy>me,min</SizePolicy>
-                        <Layout>vertical</Layout>
-                        <Children>
-
-                          <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-                            <SetVariable name="Text">Main / Headphone Mixer</SetVariable>
-                            <SetVariable name="Setting">[Skin],show_main_head_mixer</SetVariable>
-                          </Template>
-
-                          <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-                            <SetVariable name="Text">EQ Knobs</SetVariable>
-                            <SetVariable name="Setting">[Skin],show_eq_knobs</SetVariable>
-                          </Template>
-
-                          <WidgetGroup><!-- EQ Kill -->
-                            <ObjectName>SkinSettingsSubMenu</ObjectName>
-                            <Layout>stacked</Layout>
-                            <Size>180min,18f</Size>
-                            <Children>
-                              <!-- translucent cover when EQ knobs are hidden -->
-                              <Template src="skin:../LateNightMini/helpers/skin_settings_cover_inverted.xml">
-                                <SetVariable name="Setting">[Skin],show_eq_knobs</SetVariable>
-                              </Template>
-                              <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-                                <SetVariable name="Text">EQ Kill Buttons</SetVariable>
-                                <SetVariable name="Setting">[Skin],show_eq_kill_buttons</SetVariable>
-                              </Template>
-                            </Children>
-                          </WidgetGroup><!-- /EQ Kill -->
-
-                          <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-                            <SetVariable name="Text">Crossfader</SetVariable>
-                            <SetVariable name="Setting">[Skin],show_xfader</SetVariable>
-                          </Template>
-
-                        </Children>
-                      </WidgetGroup>
-                    </Children>
-                  </WidgetGroup>
-                </Children>
-              </WidgetGroup>
-            </Children>
-          </WidgetGroup><!-- /Mixer -->
 
           <WidgetGroup>
             <ObjectName>SkinSettingsSeparator</ObjectName>
@@ -447,36 +336,6 @@ Description:
             <ObjectName>SkinSettingsSeparator</ObjectName>
             <Size>1min,12f</Size>
           </WidgetGroup>
-
-          <!-- Library -->
-          <Label>
-            <ObjectName>CategoryLabel</ObjectName>
-            <Text>Library</Text>
-            <Size>180min,23f</Size>
-          </Label>
-
-          <WidgetGroup>
-            <ObjectName>SkinSettingsCategory</ObjectName>
-            <SizePolicy>me,min</SizePolicy>
-            <Layout>vertical</Layout>
-            <Children>
-
-              <!-- Preview Deck -->
-              <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-                <SetVariable name="TooltipId">show_previewdeck</SetVariable>
-                <SetVariable name="Text">Preview Deck</SetVariable>
-                <SetVariable name="Setting">[Skin],show_preview_decks</SetVariable>
-              </Template>
-
-              <!-- Cover Art -->
-              <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-                <SetVariable name="TooltipId">show_coverart</SetVariable>
-                <SetVariable name="Text">Cover Art</SetVariable>
-                <SetVariable name="Setting">[Skin],show_library_coverart</SetVariable>
-              </Template>
-
-            </Children>
-          </WidgetGroup><!-- /Library -->
 
           <!-- push the settings up, required with Qt6 -->
           <WidgetGroup><Size>0me,0me</Size></WidgetGroup>
