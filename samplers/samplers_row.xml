@@ -1,12 +1,5 @@
 <Template>
 
-  <SingletonDefinition>
-    <ObjectName>Samplers_Expander_<Variable name="Count"/>_Singleton</ObjectName>
-    <Children>
-      <Template src="skin:../LateNightMini/samplers/sampler_expand_button.xml"/>
-    </Children>
-  </SingletonDefinition>
-
   <WidgetGroup>
     <ObjectName>SamplerContainer</ObjectName>
     <Layout>horizontal</Layout>
@@ -42,10 +35,6 @@
                 <SetVariable name="SamplerNum"><Variable name="Sampler4"/></SetVariable>
               </Template>
 
-              <SingletonContainer>
-                <ObjectName>Samplers_Expander_<Variable name="Count"/>_Singleton</ObjectName>
-              </SingletonContainer>
-
               <Template src="skin:../LateNightMini/samplers/sampler_mini.xml">
                 <SetVariable name="SamplerNum"><Variable name="Sampler5"/></SetVariable>
               </Template>
@@ -63,11 +52,6 @@
               </Template>
 
             </Children>
-            <Connection>
-              <ConfigKey persist="true">[LateNightMini],expand_samplers_<Variable name="Count"/></ConfigKey>
-              <BindProperty>visible</BindProperty>
-              <Transform><Not/></Transform>
-            </Connection>
           </WidgetGroup>
 
           <!-- 8 big Samplers -->
@@ -91,10 +75,6 @@
                   <Template src="skin:../LateNightMini/samplers/sampler.xml">
                     <SetVariable name="SamplerNum"><Variable name="Sampler2"/></SetVariable>
                   </Template>
-
-                  <SingletonContainer>
-                    <ObjectName>Samplers_Expander_<Variable name="Count"/>_Singleton</ObjectName>
-                  </SingletonContainer>
 
                   <Template src="skin:../LateNightMini/samplers/sampler.xml">
                     <SetVariable name="SamplerNum"><Variable name="Sampler5"/></SetVariable>
@@ -140,10 +120,6 @@
               <!-- /Second row -->
 
             </Children>
-            <Connection>
-              <ConfigKey persist="true">[LateNightMini],expand_samplers_<Variable name="Count"/></ConfigKey>
-              <BindProperty>visible</BindProperty>
-            </Connection>
           </WidgetGroup>
 
         </Children>

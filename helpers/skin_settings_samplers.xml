@@ -76,10 +76,6 @@ Description:
               <Layout>vertical</Layout>
               <SizePolicy>me,min</SizePolicy>
               <Children>
-                <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-                  <SetVariable name="Text">Fx controls</SetVariable>
-                  <SetVariable name="Setting">[Skin],show_sampler_fx</SetVariable>
-                </Template>
 
                 <WidgetGroup>
                   <ObjectName>SamplerLoadSaveBox</ObjectName>
