@@ -18,7 +18,6 @@
             <Layout>vertical</Layout>
             <Children>
               <Template src="skin:../LateNightMini/mixer/mixer_2decks.xml"/>
-              <Template src="skin:../LateNightMini/mixer/mixer_4decks.xml"/>
             </Children>
             <Connection>
               <ConfigKey persist="true">[Skin],show_main_head_mixer</ConfigKey>

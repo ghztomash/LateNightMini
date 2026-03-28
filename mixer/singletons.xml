@@ -74,34 +74,6 @@
   </SingletonDefinition>
 
   <SingletonDefinition>
-    <ObjectName>VuMeterChannel3</ObjectName>
-    <Children>
-      <WidgetGroup>
-        <Layout>horizontal</Layout>
-        <Children>
-          <Template src="skin:../LateNightMini/mixer/vumeter_single.xml">
-            <SetVariable name="Group">[Channel3]</SetVariable>
-          </Template>
-        </Children>
-      </WidgetGroup>
-    </Children>
-  </SingletonDefinition>
-
-  <SingletonDefinition>
-    <ObjectName>VuMeterChannel4</ObjectName>
-    <Children>
-      <WidgetGroup>
-        <Layout>horizontal</Layout>
-        <Children>
-          <Template src="skin:../LateNightMini/mixer/vumeter_single.xml">
-            <SetVariable name="Group">[Channel4]</SetVariable>
-          </Template>
-        </Children>
-      </WidgetGroup>
-    </Children>
-  </SingletonDefinition>
-
-  <SingletonDefinition>
     <ObjectName>VuMeterMain_Dark</ObjectName>
     <Children>
       <WidgetGroup>
