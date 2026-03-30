@@ -198,7 +198,7 @@ WSearchLineEdit,
   background-color: #040404;
   }
   #LatencyMeterBox[highlight="0"] {
-    border: 1px solid #040404;
+    border: 0px solid transparent;
   }
   #LatencyMeterBox[highlight="1"] {
     border: 1px solid red;
@@ -253,10 +253,10 @@ WSearchLineEdit,
   }
   #ToolBarSeparator {}
   #BatteryBox {
-    margin-bottom: 1px;
+    margin-bottom: 0px;
   }
   #ClockWidget {
-    margin-bottom: 2px;
+    margin-bottom: 0px;
   }
   #LatencyLabel {
     margin-top: 1px;
@@ -1731,6 +1731,8 @@ WPushButton#SamplerExpand[displayValue="0"],
 #BeatgridControlsToggle,
 #StemControlsToggle,
 #SamplerControlsMini WPushButton,
+WPushButton#RecButton[displayValue="0"],
+WPushButton#RecButton[displayValue="1"],
 #RecDot,
 /* transparent buttons, 0-4 (max button state we have currently) */
 /* currently used for VINYL overlay */
