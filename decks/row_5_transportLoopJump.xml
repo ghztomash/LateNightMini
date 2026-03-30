@@ -184,48 +184,8 @@
           <WidgetGroup><Size>2f,0min</Size></WidgetGroup><!--  = 2-8px wide -->
           <WidgetGroup><SizePolicy>i,min</SizePolicy><MaximumSize>8,</MaximumSize></WidgetGroup>
 
-          <WidgetGroup><!-- Intro + Outro -->
-            <Layout>vertical</Layout>
-            <SizePolicy>me,min</SizePolicy>
-            <MaximumSize>52,52</MaximumSize>
-            <Children>
-              <WidgetGroup><!-- Intro -->
-                <ObjectName>AlignLeftTop</ObjectName>
-                <SizePolicy>me,min</SizePolicy>
-                <Layout>horizontal</Layout>
-                <Children>
-                  <Template src="skin:../LateNightMini/controls/button_special_cue.xml">
-                    <SetVariable name="CueType">intro_start</SetVariable>
-                  </Template>
-
-                  <Template src="skin:../LateNightMini/controls/button_special_cue.xml">
-                    <SetVariable name="CueType">intro_end</SetVariable>
-                  </Template>
-                </Children>
-              </WidgetGroup>
-              <WidgetGroup><!-- Outro -->
-                <ObjectName>AlignLeftTop</ObjectName>
-                <SizePolicy>me,min</SizePolicy>
-                <Layout>horizontal</Layout>
-                <Children>
-                  <Template src="skin:../LateNightMini/controls/button_special_cue.xml">
-                    <SetVariable name="CueType">outro_start</SetVariable>
-                  </Template>
-
-                  <Template src="skin:../LateNightMini/controls/button_special_cue.xml">
-                    <SetVariable name="CueType">outro_end</SetVariable>
-                  </Template>
-                </Children>
-              </WidgetGroup>
-            </Children>
-            <Connection>
-              <ConfigKey>[Skin],show_intro_outro_cues</ConfigKey>
-              <BindProperty>visible</BindProperty>
-            </Connection>
-          </WidgetGroup><!-- / Intro + Outro -->
-
           <WidgetGroup><Size>2f,0min</Size></WidgetGroup><!--  = 2-8px wide -->
-          <WidgetGroup><SizePolicy>i,min</SizePolicy><MaximumSize>80,</MaximumSize></WidgetGroup>
+          <WidgetGroup><SizePolicy>i,min</SizePolicy><MaximumSize>8,</MaximumSize></WidgetGroup>
 
           <WidgetGroup><!-- Loop buttons + beatloop size spinbox -->
             <ObjectName>LoopControls</ObjectName>

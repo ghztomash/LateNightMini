@@ -57,13 +57,6 @@ Description:
         </Children>
       </WidgetGroup><!-- 4/8 Hotcues -->
 
-      <!-- Intro & Outro cues -->
-      <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-        <SetVariable name="TooltipId">show_intro_outro_cues</SetVariable>
-        <SetVariable name="Text">Intro &amp; Outro Cues</SetVariable>
-        <SetVariable name="Setting">[Skin],show_intro_outro_cues</SetVariable>
-      </Template>
-
       <!-- Loop Controls -->
       <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
         <SetVariable name="TooltipId">show_loop_controls</SetVariable>
