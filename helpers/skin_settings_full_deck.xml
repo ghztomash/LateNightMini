@@ -105,13 +105,6 @@ Description:
         </Children>
       </WidgetGroup>
 
-      <!-- Key Control -->
-      <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-        <SetVariable name="TooltipId">show_key_controls</SetVariable>
-        <SetVariable name="Text">Key Controls</SetVariable>
-        <SetVariable name="Setting">[Skin],show_key_controls</SetVariable>
-      </Template>
-
       <!-- Vinyl Control -->
       <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
         <SetVariable name="TooltipId">show_vinylcontrol</SetVariable>

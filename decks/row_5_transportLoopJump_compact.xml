@@ -178,21 +178,6 @@
         <MaximumSize>40,</MaximumSize>
       </WidgetGroup>
 
-      <WidgetGroup>
-        <SizePolicy>me,min</SizePolicy>
-        <MaximumSize>111,</MaximumSize>
-        <Layout>vertical</Layout>
-        <Children>
-          <SingletonContainer>
-            <ObjectName>KeyControls<Variable name="ChanNum"/></ObjectName>
-          </SingletonContainer>
-        </Children>
-        <Connection>
-          <ConfigKey persist="true">[Skin],show_key_controls_compact</ConfigKey>
-          <BindProperty>visible</BindProperty>
-        </Connection>
-      </WidgetGroup>
-
       <WidgetGroup><Size>2f,0min</Size></WidgetGroup>
       <WidgetGroup>
         <SizePolicy>i,min</SizePolicy>
