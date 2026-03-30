@@ -82,24 +82,6 @@ Description:
         <SetVariable name="Setting">[Skin],show_coverart</SetVariable>
       </Template>
 
-      <!-- Big Spinny / Cover Art -->
-      <WidgetGroup>
-        <ObjectName>SkinSettingsSubMenu</ObjectName>
-        <Layout>stacked</Layout>
-        <Size>180min,18f</Size>
-        <Children>
-          <!-- translucent cover when neither Spinny nor Cover are shown -->
-          <Template src="skin:../LateNightMini/helpers/skin_settings_cover_inverted.xml">
-            <SetVariable name="Setting">[Skin],show_spinny_or_cover</SetVariable>
-          </Template>
-          <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-            <SetVariable name="TooltipId">show_coverart</SetVariable>
-            <SetVariable name="Text">Big Spinny/Cover Art</SetVariable>
-            <SetVariable name="Setting">[Skin],select_big_spinny_or_cover</SetVariable>
-          </Template>
-        </Children>
-      </WidgetGroup>
-
     </Children>
   </WidgetGroup>
 </Template>

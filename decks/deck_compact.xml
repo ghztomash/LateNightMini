@@ -22,21 +22,6 @@
                 <Children>
 
                   <WidgetGroup>
-                    <ObjectName>SpinnyCoverContainer_BigCompact</ObjectName>
-                    <Layout>horizontal</Layout>
-                    <SizePolicy>f,f</SizePolicy>
-                    <Children>
-                      <SingletonContainer>
-                        <ObjectName>SpinnyCoverart<Variable name="ChanNum"/></ObjectName>
-                      </SingletonContainer>
-                    </Children>
-                    <Connection>
-                      <ConfigKey>[Skin],show_big_spinny_or_cover</ConfigKey>
-                      <BindProperty>visible</BindProperty>
-                    </Connection>
-                  </WidgetGroup><!-- SpinnyCoverContainer_BigCompact -->
-
-                  <WidgetGroup>
                     <SizePolicy>me,min</SizePolicy>
                     <Layout>vertical</Layout>
                     <Children>
