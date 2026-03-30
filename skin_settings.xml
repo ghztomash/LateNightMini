@@ -22,13 +22,13 @@ Description:
       <WidgetGroup>
         <ObjectName>SkinSettings</ObjectName>
         <Layout>vertical</Layout>
-        <Size>240f,1me</Size>
+        <Size>220f,1me</Size>
         <Children>
 
 <!-- Deck size selector -->
           <WidgetGroup>
             <ObjectName>DeckSizeSettings</ObjectName>
-            <Size>225me,20f</Size>
+            <Size>215me,20f</Size>
             <Layout>horizontal</Layout>
             <Children>
               <WidgetGroup><Size>5f,0min</Size></WidgetGroup>
@@ -42,7 +42,7 @@ Description:
 
               <!-- Deck size toggles + stacked show_mixer hint/toggle -->
               <WidgetGroup>
-                <Size>225f,18f</Size>
+                <Size>150f,18f</Size>
                 <Layout>stacked</Layout>
                 <Children>
                   <!-- hide deck sizes with the expanded library -->
