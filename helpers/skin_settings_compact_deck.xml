@@ -59,15 +59,6 @@ Description:
         <SetVariable name="Setting">[Skin],show_vinylcontrol</SetVariable>
       </Template>
 
-      <!-- Level meters -->
-      <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-        <SetVariable name="TooltipId">show_vinylcontrol</SetVariable>
-        <SetVariable name="Text">VU meters</SetVariable>
-        <SetVariable name="Setting">[Skin],show_vumeters_compact</SetVariable>
-      </Template>
-
-      <WidgetGroup><Size>0me,5f</Size></WidgetGroup>
-
       <!-- Spinny -->
       <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
         <SetVariable name="TooltipId">show_spinny</SetVariable>

@@ -55,11 +55,6 @@
                 <ObjectName>DeckRateSpacer</ObjectName>
                 <SizePolicy>min,min</SizePolicy>
                 <Children/>
-                <Connection>
-                  <ConfigKey persist="true">[LateNightMini],show_vumeters_compact</ConfigKey>
-                  <Transform><Not/></Transform>
-                  <BindProperty>visible</BindProperty>
-                </Connection>
               </WidgetGroup>
             </Children>
             <Connection>
@@ -72,15 +67,6 @@
           <Template src="skin:../LateNightMini/decks/rate_controls_compact.xml"/>
 
         </Children>
-        <!-- This is supposed to reduce margin and eliminate the border that
-          touches the optional VU meters when they're visible.
-          Unfortunately it is buggy and works only for the state that is
-          active while the skin is loaded. If the highlight value changes the
-          layout may be screwed and inner widgets overlap the outer border.. wtf?
-        <Connection>
-          <ConfigKey persist="true">[LateNightMini],show_vumeters_compact</ConfigKey>
-          <BindProperty>highlight</BindProperty>
-        </Connection> -->
       </WidgetGroup><!-- DeckCompactN -->
 
     </Children>

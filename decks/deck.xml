@@ -10,44 +10,28 @@
         <SetVariable name="Group">[Channel<Variable name="ChanNum"/>]</SetVariable>
       </Template>
 
-      <WidgetStack currentpage="[Skin],show_mixer" persist="true">
+      <WidgetStack currentpage="[LateNightMini],deck_size_without_mixer" persist="true">
         <Children>
-
-          <!-- no mixer -->
-          <WidgetStack currentpage="[LateNightMini],deck_size_without_mixer" persist="true">
+          <!-- minimal deck selected -->
+          <WidgetGroup trigger="[LateNightMini],show_mini_deck">
+            <Layout>horizontal</Layout>
             <Children>
-              <!-- minimal deck selected -->
-              <WidgetGroup trigger="[LateNightMini],show_mini_deck">
-                <Layout>horizontal</Layout>
-                <Children>
-                  <SingletonContainer>
-                    <ObjectName>Deck<Variable name="ChanNum"/>_Mini</ObjectName>
-                  </SingletonContainer>
-                </Children>
-              </WidgetGroup>
-              <!-- Compact deck selected -->
-              <WidgetGroup trigger="[LateNightMini],show_compact_deck">
-                <Layout>horizontal</Layout>
-                <Children>
-                <SingletonContainer>
-                  <ObjectName>Deck<Variable name="ChanNum"/>_Compact</ObjectName>
-                </SingletonContainer>
-                </Children>
-              </WidgetGroup>
-              <!-- Full deck selected -->
-              <WidgetGroup trigger="[LateNightMini],show_full_deck">
-                <Layout>horizontal</Layout>
-                <Children>
-                  <SingletonContainer>
-                    <ObjectName>Deck<Variable name="ChanNum"/>_Full</ObjectName>
-                  </SingletonContainer>
-                </Children>
-              </WidgetGroup>
+              <SingletonContainer>
+                <ObjectName>Deck<Variable name="ChanNum"/>_Mini</ObjectName>
+              </SingletonContainer>
             </Children>
-          </WidgetStack>
-
-          <!-- mixer shown = full deck -->
-          <WidgetGroup trigger="[Skin],show_mixer" on_hide_select="0">
+          </WidgetGroup>
+          <!-- Compact deck selected -->
+          <WidgetGroup trigger="[LateNightMini],show_compact_deck">
+            <Layout>horizontal</Layout>
+            <Children>
+            <SingletonContainer>
+              <ObjectName>Deck<Variable name="ChanNum"/>_Compact</ObjectName>
+            </SingletonContainer>
+            </Children>
+          </WidgetGroup>
+          <!-- Full deck selected -->
+          <WidgetGroup trigger="[LateNightMini],show_full_deck">
             <Layout>horizontal</Layout>
             <Children>
               <SingletonContainer>
