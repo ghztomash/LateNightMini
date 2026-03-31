@@ -158,11 +158,8 @@
             </Children>
           </WidgetGroup><!-- Channel 1 Quick effect selector + xFader switch -->
 
-          <!--  Regular crossfader for
-                * 2 decks with EQ knobs visible
-                * 4 decks
-                Narrow crossfader for
-                * 2 decks with EQ knobs hidden -->
+          <!-- Regular crossfader for 2 decks with EQ knobs visible.
+               Narrow crossfader for 2 decks with EQ knobs hidden. -->
           <WidgetGroup>
             <ObjectName>CrossfaderContainer</ObjectName>
             <Layout>horizontal</Layout>
@@ -296,10 +293,5 @@
       <WidgetGroup><SizePolicy>min,e</SizePolicy></WidgetGroup>
 
     </Children>
-    <Connection>
-      <ConfigKey persist="true">[Skin],show_4decks</ConfigKey>
-      <Transform><Not/></Transform>
-      <BindProperty>visible</BindProperty>
-    </Connection>
   </WidgetGroup><!-- MixerDecks -->
 </Template>

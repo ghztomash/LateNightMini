@@ -131,41 +131,6 @@
                 </Children>
               </WidgetGroup>
 
-              <WidgetGroup>
-                <Layout>vertical</Layout>
-                <SizePolicy>min,min</SizePolicy>
-                <Children>
-
-                  <WidgetGroup>
-                    <MinimumSize>0,10</MinimumSize>
-                    <MaximumSize>,10</MaximumSize>
-                    <SizePolicy>min,me</SizePolicy>
-                  </WidgetGroup>
-
-                  <WidgetGroup>
-                    <ObjectName>VuMeterMain_4Decks</ObjectName>
-                    <Layout>horizontal</Layout>
-                    <SizePolicy>max,max</SizePolicy>
-                    <Children>
-                      <SingletonContainer>
-                        <ObjectName>VuMeterMain_Light</ObjectName>
-                      </SingletonContainer>
-                    </Children>
-                  </WidgetGroup><!-- VuMeterMain_4Decks -->
-
-                  <WidgetGroup>
-                    <MinimumSize>0,20</MinimumSize>
-                    <MaximumSize>,20</MaximumSize>
-                    <SizePolicy>min,me</SizePolicy>
-                  </WidgetGroup>
-
-                </Children>
-                <Connection>
-                  <ConfigKey persist="true">[Skin],show_4decks</ConfigKey>
-                  <BindProperty>visible</BindProperty>
-                </Connection>
-              </WidgetGroup><!-- /MainVuMeter4ch -->
-
             </Children>
           </WidgetGroup><!-- MainControls -->
 

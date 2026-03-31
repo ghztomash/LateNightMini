@@ -32,7 +32,7 @@
     <title>LateNightMini</title>
     <author>owilliams, ronso0, tomash_ghz</author>
     <version>2.4.0.01</version>
-    <description>A wide nighttime skin with stacked waveforms, 4 decks in 3 configurations and up to 16 samplers.</description>
+    <description>A wide nighttime skin with stacked waveforms, 2 decks in 3 configurations and up to 16 samplers.</description>
     <language>en</language>
     <license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
     <attributes>
@@ -44,7 +44,6 @@
 
     <!-- Decks -->
       <!-- general -->
-      <attribute persist="true" config_key="[Skin],show_4decks">0</attribute>
       <attribute persist="true" config_key="[Skin],show_hotcues">0</attribute>
       <attribute persist="true" config_key="[Skin],show_8_hotcues">0</attribute>
       <attribute persist="true" config_key="[Skin],show_loop_controls">1</attribute>
@@ -173,12 +172,9 @@
       <!-- This is a hack to have a grey background in empty decks.
           When a track is loaded the bg gets darker for better contrast -->
       <SetVariable name="BgColorOverview_12">#19191a</SetVariable>
-      <SetVariable name="BgColorOverview_34">#001b23</SetVariable>
       <SetVariable name="BgColorOverview_SamPre">rgba(15, 15, 15, 20)</SetVariable>
       <SetVariable name="BgColorWaveform_12">#0f0f0e</SetVariable>
-      <SetVariable name="BgColorWaveform_34">#001b23</SetVariable>
       <SetVariable name="SignalColor_12">#d9b28c</SetVariable>
-      <SetVariable name="SignalColor_34">#7bc6c3</SetVariable>
 
       <!-- Only named colors are accepted, see w3 color chart
           https://www.w3.org/wiki/CSS/Properties/color/keywords -->
@@ -319,12 +315,9 @@
 
       <!-- Waveform & Overview colors -->
       <SetVariable name="BgColorOverview_12">rgba(15, 15, 15, 20)</SetVariable>
-      <SetVariable name="BgColorOverview_34">rgba(0, 27, 35, 120)</SetVariable>
       <SetVariable name="BgColorOverview_SamPre">#0f0f0f</SetVariable>
       <SetVariable name="BgColorWaveform_12">#0f0f0e</SetVariable>
-      <SetVariable name="BgColorWaveform_34">#001b23</SetVariable>
       <SetVariable name="SignalColor_12">#e7c413</SetVariable>
-      <SetVariable name="SignalColor_34">#09b2ae</SetVariable>
       <!-- default colors -->
       <SetVariable name="SignalHighColor">blue</SetVariable>
       <SetVariable name="SignalMidColor">green</SetVariable>
@@ -384,30 +377,6 @@
           <SetVariable name="SignalColor"><Variable name="SignalColor_12"/></SetVariable>
           <SetVariable name="BgColor"><Variable name="BgColorOverview_12"/></SetVariable>
         </Template>
-      </Children>
-    </SingletonDefinition>
-
-    <SingletonDefinition>
-      <ObjectName>Deck3_Src</ObjectName>
-      <Children>
-      <Template src="skin:../LateNightMini/decks/deck.xml">
-        <SetVariable name="ChanNum">3</SetVariable>
-        <SetVariable name="DeckGroup">34</SetVariable>
-        <SetVariable name="SignalColor"><Variable name="SignalColor_34"/></SetVariable>
-        <SetVariable name="BgColor"><Variable name="BgColorOverview_34"/></SetVariable>
-      </Template>
-      </Children>
-    </SingletonDefinition>
-
-    <SingletonDefinition>
-      <ObjectName>Deck4_Src</ObjectName>
-      <Children>
-      <Template src="skin:../LateNightMini/decks/deck.xml">
-        <SetVariable name="ChanNum">4</SetVariable>
-        <SetVariable name="DeckGroup">34</SetVariable>
-        <SetVariable name="SignalColor"><Variable name="SignalColor_34"/></SetVariable>
-        <SetVariable name="BgColor"><Variable name="BgColorOverview_34"/></SetVariable>
-      </Template>
       </Children>
     </SingletonDefinition>
 

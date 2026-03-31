@@ -21,8 +21,6 @@
 
 #Deck1, #DeckCompact1, #DeckMini1,
 #Deck2, #DeckCompact2, #DeckMini2,
-#Deck3, #DeckCompact3, #DeckMini3,
-#Deck4, #DeckCompact4, #DeckMini4,
 #MixerDecks,
 #FxUnitControlsExpanded,
 #FxUnitControlsCollapsed,
@@ -36,8 +34,6 @@
 /* 1st-level containers */
 #Deck1, #DeckCompact1, #DeckMini1,
 #Deck2, #DeckCompact2, #DeckMini2,
-#Deck3, #DeckCompact3, #DeckMini3,
-#Deck4, #DeckCompact4, #DeckMini4,
 #MixerDecks,
 #FxUnitControlsCollapsed,
 #FxUnitControlsExpanded,
@@ -65,8 +61,6 @@
 #HeadphoneControls,
 #VuMeterDeck1_Compact,
 #VuMeterDeck2_Compact,
-#VuMeterDeck3_Compact,
-#VuMeterDeck4_Compact,
 #VuMeterMain_Compact,
 #FxUnitHeaderCollapsed,
 #FxUnitHeaderExpanded,
@@ -150,8 +144,6 @@ QAbstractScrollArea::corner {
 /* recessed regions */
 #WaveformBox1,
 #WaveformBox2,
-#WaveformBox3,
-#WaveformBox4,
 #WaveformsFrame,
 #OverviewBox,
 #OverviewBoxMini,
@@ -433,13 +425,9 @@ WTrackProperty[selected="true"],
 
 #Deck1, #DeckCompact1, #DeckMini1,
 #Deck2, #DeckCompact2, #DeckMini2,
-#Deck3, #DeckCompact3, #DeckMini3,
-#Deck4, #DeckCompact4, #DeckMini4,
 #MixerContainer,
 #VuMeterDeck1_Compact,
 #VuMeterDeck2_Compact,
-#VuMeterDeck3_Compact,
-#VuMeterDeck4_Compact,
 #VuMeterMain_Compact,
 #FxUnit1, #FxUnit3,
 #FxUnit2, #FxUnit4,
@@ -452,7 +440,6 @@ WTrackProperty[selected="true"],
 }
 
 #Deck1, #DeckMini1,
-#Deck3, #DeckMini3,
 #MixerContainer,
 #FxUnit1,
 #FxUnit3,
@@ -463,7 +450,6 @@ WTrackProperty[selected="true"],
 }
 
 #Deck2, #DeckMini2,
-#Deck4, #DeckMini4,
 #MixerContainer,
 #FxUnit2,
 #FxUnit4,
@@ -509,34 +495,21 @@ WTrackProperty[selected="true"],
 }
 
 #WaveformBox1,
-#WaveformBox2,
-#WaveformBox3,
-#WaveformBox4 {
+#WaveformBox2 {
   border-left: 0px;
   }
-  #WaveformBox1,
-  #WaveformBox3 {
+  #WaveformBox1 {
     border-bottom: 0px;
   }
-  #WaveformBox2,
-  #WaveformBox4 {
+  #WaveformBox2 {
     border-top: 0px;
-  }
-  /* Hide some borders when 4 decks are visible */
-  #WaveformBox1[highlight="1"] {
-    border-top: 0px;
-  }
-  #WaveformBox2[highlight="1"] {
-    border-bottom: 0px;
   }
 
 
 /************** Decks *********************************************************/
 
 #DeckMini1,
-#DeckMini2,
-#DeckMini3,
-#DeckMini4 {
+#DeckMini2 {
   padding-right: 2px;
 }
 
@@ -866,15 +839,13 @@ WBpmEditor QDoubleSpinBox::down-button {
   margin: 5px 0px;
 }
 
-#VuMeterDeck1_Compact,
-#VuMeterDeck3_Compact {
+#VuMeterDeck1_Compact {
   padding: 0px 4px 0px 5px;
   border-left: 0px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-#VuMeterDeck2_Compact,
-#VuMeterDeck4_Compact {
+#VuMeterDeck2_Compact {
   padding: 0px 5px 0px 4px;
   border-right: 0px;
   border-top-right-radius: 0px;
@@ -1381,38 +1352,6 @@ WEffectChainPresetSelector:!editable:on,
   #spinBoxTransition,
   #spinBoxRecentDays {
     color: #a7998b;
-  }
-
-/* pale blue */
-#Deck3 #TitleText,
-  #Deck3 #ArtistText,
-  #Deck3 #BpmText,
-  #Deck3 #KeyText,
-  #DeckCompact3 #TitleText,
-  #DeckCompact3 #ArtistText,
-  #DeckCompact3 #BpmText,
-  #DeckCompact3 #KeyText,
-  #DeckMini3 #TitleTextSmall,
-  #DeckMini3 #ArtistTextSmall,
-  #DeckMini3 #BpmTextSmall,
-  #DeckMini3 #KeyTextSmall,
-#Deck4 #TitleText,
-  #Deck4 #ArtistText,
-  #Deck4 #BpmText,
-  #Deck4 #KeyText,
-  #DeckCompact4 #TitleText,
-  #DeckCompact4 #ArtistText,
-  #DeckCompact4 #BpmText,
-  #DeckCompact4 #KeyText,
-  #DeckMini4 #TitleTextSmall,
-  #DeckMini4 #ArtistTextSmall,
-  #DeckMini4 #BpmTextSmall,
-  #DeckMini4 #KeyTextSmall {
-  color: #85bdbb;
-  }
-  #Deck3 WStarRating, #DeckCompact3 WStarRating,
-  #Deck4 WStarRating, #DeckCompact4 WStarRating {
-    color: #559b99;
   }
 
 /* Grey for FxUnit labels */
@@ -2613,65 +2552,47 @@ WPushButton#PlayDeck[value="0"] {
     image: url(skin:../LateNightMini/palemoon/buttons/btn__fx_focus_active.svg) no-repeat center center;
   }
 
-/* deck controls for decks 1-4 and samplers */
-#CurposButton12[displayValue="0"], #CurposButton34[displayValue="0"] {
+/* deck controls for decks 1-2 and samplers */
+#CurposButton12[displayValue="0"] {
   image: url(skin:../LateNightMini/palemoon/buttons/btn__beat_curpos.svg) no-repeat center center;
   }
   #CurposButton12[value="1"] {
     image: url(skin:../LateNightMini/palemoon/buttons/btn__beat_curpos_active_12.svg) no-repeat center center;
   }
-  #CurposButton34[value="1"] {
-    image: url(skin:../LateNightMini/palemoon/buttons/btn__beat_curpos_active_34.svg) no-repeat center center;
-  }
 
-  #EjectButton12[displayValue="0"], #EjectButton34[displayValue="0"] {
+  #EjectButton12[displayValue="0"] {
     image: url(skin:../LateNightMini/palemoon/buttons/btn__eject.svg) no-repeat center center;
     }
     #EjectButton12[value="1"] {
       image: url(skin:../LateNightMini/palemoon/buttons/btn__eject_active_12.svg) no-repeat center center;
     }
-    #EjectButton34[value="1"] {
-      image: url(skin:../LateNightMini/palemoon/buttons/btn__eject_active_34.svg) no-repeat center center;
-    }
 
-  #RepeatButton12[displayValue="0"], #RepeatButton34[displayValue="0"] {
+  #RepeatButton12[displayValue="0"] {
     image: url(skin:../LateNightMini/palemoon/buttons/btn__repeat.svg) no-repeat center center;
     }
     #RepeatButton12[displayValue="1"] {
       image: url(skin:../LateNightMini/palemoon/buttons/btn__repeat_active_12.svg) no-repeat center center;
     }
-    #RepeatButton34[displayValue="1"] {
-      image: url(skin:../LateNightMini/palemoon/buttons/btn__repeat_active_34.svg) no-repeat center center;
-    }
 
-  #QuantizeButton12[displayValue="0"], #QuantizeButton34[displayValue="0"] {
+  #QuantizeButton12[displayValue="0"] {
     image: url(skin:../LateNightMini/palemoon/buttons/btn__quantize.svg) no-repeat center center;
     }
     #QuantizeButton12[displayValue="1"] {
       image: url(skin:../LateNightMini/palemoon/buttons/btn__quantize_active_12.svg) no-repeat center center;
     }
-    #QuantizeButton34[displayValue="1"] {
-      image: url(skin:../LateNightMini/palemoon/buttons/btn__quantize_active_34.svg) no-repeat center center;
-    }
 
-  #SlipmodeButton12[displayValue="0"], #SlipmodeButton34[displayValue="0"] {
+  #SlipmodeButton12[displayValue="0"] {
     image: url(skin:../LateNightMini/palemoon/buttons/btn__slip.svg) no-repeat center center;
     }
     #SlipmodeButton12[displayValue="1"] {
       image: url(skin:../LateNightMini/palemoon/buttons/btn__slip_active_12.svg) no-repeat center center;
     }
-    #SlipmodeButton34[displayValue="1"] {
-      image: url(skin:../LateNightMini/palemoon/buttons/btn__slip_active_34.svg) no-repeat center center;
-    }
 
-  #KeylockButton12[displayValue="0"], #KeylockButton34[displayValue="0"] {
+  #KeylockButton12[displayValue="0"] {
     image: url(skin:../LateNightMini/palemoon/buttons/btn__keylock.svg) no-repeat center center;
     }
     #KeylockButton12[displayValue="1"] {
       image: url(skin:../LateNightMini/palemoon/buttons/btn__keylock_active_12.svg) no-repeat center center;
-    }
-    #KeylockButton34[displayValue="1"] {
-      image: url(skin:../LateNightMini/palemoon/buttons/btn__keylock_active_34.svg) no-repeat center center;
     }
 
 #NoStemLabel {

@@ -24,12 +24,8 @@
 #WaveformsContainer,
 #Deck1, #DeckCompact1, #DeckMini1,
 #Deck2, #DeckCompact2, #DeckMini2,
-#Deck3, #DeckCompact3, #DeckMini3,
-#Deck4, #DeckCompact4, #DeckMini4,
 #VuMeterDeck1_Compact,
 #VuMeterDeck2_Compact,
-#VuMeterDeck3_Compact,
-#VuMeterDeck4_Compact,
 #VuMeterMain_Compact,
 #FxUnit1, #FxUnit2, #FxUnit3, #FxUnit4,
 #FxUnitControlsExpanded, #FxUnitControlsCollapsed,
@@ -56,13 +52,9 @@ WStarRating {
 #WaveformsContainer,
 #Deck1, #DeckCompact1, #DeckMini1,
 #Deck2, #DeckCompact2, #DeckMini2,
-#Deck3, #DeckCompact3, #DeckMini3,
-#Deck4, #DeckCompact4, #DeckMini4,
 #MixerContainer,
 #VuMeterDeck1_Compact,
 #VuMeterDeck2_Compact,
-#VuMeterDeck3_Compact,
-#VuMeterDeck4_Compact,
 #VuMeterMain_Compact,
 #FxUnit1, #FxUnit2, #FxUnit3, #FxUnit4,
 #MicDuckingContainer, #MicAuxUnit, #MicAuxAddFrame,
@@ -108,8 +100,6 @@ WTrackProperty:hover[selected="true"],
 /* borders of embedded regions like deck buttons & Main mixer */
 #WaveformBox1,
 #WaveformBox2,
-#WaveformBox3,
-#WaveformBox4,
 #DeckRow_5_LoopCuesTransport,
 #DeckRow_5_LoopCuesTransportCompact,
 #MainControls, #HeadphoneControls,
@@ -130,9 +120,7 @@ WSearchLineEdit,
     border-bottom: 1px solid #0c0c0c;
   }
   #WaveformBox1,
-  #WaveformBox2,
-  #WaveformBox3,
-  #WaveformBox4 {
+  #WaveformBox2 {
     border-radius: 0px;
   }
   /* some get a background image */
@@ -376,13 +364,9 @@ WLibrary {
 
 #Deck1, #DeckCompact1, #DeckMini1,
 #Deck2, #DeckCompact2, #DeckMini2,
-#Deck3, #DeckCompact3, #DeckMini3,
-#Deck4, #DeckCompact4, #DeckMini4,
 #MixerContainer,
 #VuMeterDeck1_Compact,
 #VuMeterDeck2_Compact,
-#VuMeterDeck3_Compact,
-#VuMeterDeck4_Compact,
 #VuMeterMain_Compact,
 #FxUnit1, #FxUnit3,
 #FxUnit2, #FxUnit4,
@@ -395,7 +379,6 @@ WLibrary {
 }
 
 #Deck1, #DeckMini1,
-#Deck3, #DeckMini3,
 #MixerContainer,
 #FxUnit1,
 #FxUnit3,
@@ -406,7 +389,6 @@ WLibrary {
 }
 
 #Deck2, #DeckMini2,
-#Deck4, #DeckMini4,
 #MixerContainer,
 #FxUnit2,
 #FxUnit4,
@@ -442,34 +424,21 @@ WLibrary {
 }
 
 #WaveformBox1,
-#WaveformBox2,
-#WaveformBox3,
-#WaveformBox4 {
+#WaveformBox2 {
   border-left: 0px;
   }
-  #WaveformBox1,
-  #WaveformBox3 {
+  #WaveformBox1 {
     border-bottom: 0px;
   }
-  #WaveformBox2,
-  #WaveformBox4 {
+  #WaveformBox2 {
     border-top: 0px;
-  }
-  /* Hide some borders when 4 decks are visible */
-  #WaveformBox1[highlight="1"] {
-    border-top: 0px;
-  }
-  #WaveformBox2[highlight="1"] {
-    border-bottom: 0px;
   }
 
 
 /************** Decks *********************************************************/
 
 #DeckMini1,
-#DeckMini2,
-#DeckMini3,
-#DeckMini4 {
+#DeckMini2 {
   padding: 0px 4px 0px 1px;
 }
 
@@ -859,14 +828,12 @@ WBpmEditor QDoubleSpinBox::down-button {
   margin-left: 4px;
   padding: 0px 5px;
 }
-#VuMeterDeck1_Compact,
-#VuMeterDeck3_Compact {
+#VuMeterDeck1_Compact {
   padding: 0px 4px 0px 5px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 1px;
 }
-#VuMeterDeck2_Compact,
-#VuMeterDeck4_Compact {
+#VuMeterDeck2_Compact {
   padding: 0px 5px 0px 4px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 1px;
@@ -1249,10 +1216,6 @@ WCueMenuPopup QLabel,
   }
 
 /* light blue */
-#Deck3 WLabel, #DeckCompact3 WLabel, #DeckMini3 WLabel,
-  #Deck3 WStarRating, #DeckCompact3 WStarRating,
-#Deck4 WLabel, #DeckCompact4 WLabel, #DeckMini4 WLabel,
-  #Deck4 WStarRating, #DeckCompact4 WStarRating,
 #AuxSubTitle {
   color: #0bd9d1;
 }
@@ -1984,64 +1947,46 @@ WPushButton#BpmLockToggle[value="1"] {
   }
 
 /* deck controls for decks 1-4 and samplers */
-#CurposButton12[displayValue="0"], #CurposButton34[displayValue="0"] {
+#CurposButton12[displayValue="0"] {
   image: url(skin:../LateNightMini/classic/buttons/btn__beat_curpos.svg) no-repeat center center;
   }
   #CurposButton12[value="1"] {
     image: url(skin:../LateNightMini/classic/buttons/btn__beat_curpos_active_12.svg) no-repeat center center;
   }
-  #CurposButton34[value="1"] {
-    image: url(skin:../LateNightMini/classic/buttons/btn__beat_curpos_active_34.svg) no-repeat center center;
-  }
 
-  #EjectButton12[displayValue="0"], #EjectButton34[displayValue="0"] {
+  #EjectButton12[displayValue="0"] {
     image: url(skin:../LateNightMini/classic/buttons/btn__eject.svg) no-repeat center center;
     }
     #EjectButton12[value="1"] {
       image: url(skin:../LateNightMini/classic/buttons/btn__eject_active_12.svg) no-repeat center center;
     }
-    #EjectButton34[value="1"] {
-      image: url(skin:../LateNightMini/classic/buttons/btn__eject_active_34.svg) no-repeat center center;
-    }
 
-  #RepeatButton12[displayValue="0"], #RepeatButton34[displayValue="0"] {
+  #RepeatButton12[displayValue="0"] {
     image: url(skin:../LateNightMini/classic/buttons/btn__repeat.svg) no-repeat center center;
     }
     #RepeatButton12[displayValue="1"] {
       image: url(skin:../LateNightMini/classic/buttons/btn__repeat_active_12.svg) no-repeat center center;
     }
-    #RepeatButton34[displayValue="1"] {
-      image: url(skin:../LateNightMini/classic/buttons/btn__repeat_active_34.svg) no-repeat center center;
-    }
 
-  #QuantizeButton12[displayValue="0"], #QuantizeButton34[displayValue="0"] {
+  #QuantizeButton12[displayValue="0"] {
     image: url(skin:../LateNightMini/classic/buttons/btn__quantize.svg) no-repeat center center;
     }
     #QuantizeButton12[displayValue="1"] {
       image: url(skin:../LateNightMini/classic/buttons/btn__quantize_active_12.svg) no-repeat center center;
     }
-    #QuantizeButton34[displayValue="1"] {
-      image: url(skin:../LateNightMini/classic/buttons/btn__quantize_active_34.svg) no-repeat center center;
-    }
 
-  #SlipmodeButton12[displayValue="0"], #SlipmodeButton34[displayValue="0"] {
+  #SlipmodeButton12[displayValue="0"] {
     image: url(skin:../LateNightMini/classic/buttons/btn__slip.svg) no-repeat center center;
     }
     #SlipmodeButton12[displayValue="1"] {
       image: url(skin:../LateNightMini/classic/buttons/btn__slip_active_12.svg) no-repeat center center;
     }
-    #SlipmodeButton34[displayValue="1"] {
-      image: url(skin:../LateNightMini/classic/buttons/btn__slip_active_34.svg) no-repeat center center;
-    }
 
-  #KeylockButton12[displayValue="0"], #KeylockButton34[displayValue="0"] {
+  #KeylockButton12[displayValue="0"] {
     image: url(skin:../LateNightMini/classic/buttons/btn__keylock.svg) no-repeat center center;
     }
     #KeylockButton12[displayValue="1"] {
       image: url(skin:../LateNightMini/classic/buttons/btn__keylock_active_12.svg) no-repeat center center;
-    }
-    #KeylockButton34[displayValue="1"] {
-      image: url(skin:../LateNightMini/classic/buttons/btn__keylock_active_34.svg) no-repeat center center;
     }
 
 #BeatgridControlsToggle[displayValue="0"] {

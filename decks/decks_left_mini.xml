@@ -10,20 +10,6 @@
         <ObjectName>Deck1_Mini</ObjectName>
       </SingletonContainer>
 
-      <WidgetGroup>
-        <Layout>horizontal</Layout>
-        <SizePolicy>me,min</SizePolicy>
-        <Children>
-          <SingletonContainer>
-            <ObjectName>Deck3_Mini</ObjectName>
-          </SingletonContainer>
-        </Children>
-        <Connection>
-          <ConfigKey>[Skin],show_4decks</ConfigKey>
-          <BindProperty>visible</BindProperty>
-        </Connection>
-      </WidgetGroup>
-
     </Children>
   </WidgetGroup>
 </Template>
