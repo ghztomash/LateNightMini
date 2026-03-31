@@ -80,13 +80,6 @@ Description:
         <SetVariable name="Setting">[Skin],show_rate_controls</SetVariable>
       </Template>
 
-      <!-- Vinyl Control -->
-      <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
-        <SetVariable name="TooltipId">show_vinylcontrol</SetVariable>
-        <SetVariable name="Text">Vinyl Control</SetVariable>
-        <SetVariable name="Setting">[Skin],show_vinylcontrol</SetVariable>
-      </Template>
-
       <WidgetGroup><Size>0me,5f</Size></WidgetGroup>
 
       <!-- Spinny -->
