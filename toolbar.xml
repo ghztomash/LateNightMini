@@ -166,7 +166,15 @@
 
       <WidgetGroup><Size>7f,1min</Size></WidgetGroup>
 
-      <Template src="skin:../LateNightMini/mixer/vumeter_main_horizontal.xml"/>
+      <WidgetGroup>
+        <ObjectName>ToolbarMainVuMeterBox</ObjectName>
+        <Size>92f,14f</Size>
+        <SizePolicy>f,min</SizePolicy>
+        <Layout>vertical</Layout>
+        <Children>
+          <Template src="skin:../LateNightMini/mixer/vumeter_main_horizontal.xml"/>
+        </Children>
+      </WidgetGroup>
       <WidgetGroup><Size>7f,1min</Size></WidgetGroup>
 
       <WidgetGroup>

@@ -2,25 +2,26 @@
 <!--
   Description:
     A compact stereo master VU meter for horizontal layouts such as the toolbar.
-    This intentionally follows the CPU load meter structure because the regular
-    deck VU art is vertical-only.
+    It uses toolbar-specific horizontal variants of the compact light VU assets
+    so the scale and clipping area match the compact main meter.
 -->
 <Template>
   <WidgetGroup>
     <ObjectName>ToolbarMainVuMeter</ObjectName>
     <Layout>vertical</Layout>
-    <SizePolicy>min,min</SizePolicy>
+    <Size>92f,14f</Size>
+    <SizePolicy>f,min</SizePolicy>
     <Children>
       <WidgetGroup>
         <ObjectName>ToolbarMainVuMeterLeft</ObjectName>
-        <Size>61f,7f</Size>
-        <Layout>vertical</Layout>
+        <Size>92f,6f</Size>
+        <Layout>horizontal</Layout>
         <Children>
           <VuMeter>
             <TooltipId>main_VuMeterL</TooltipId>
-            <Size>59f,5f</Size>
-            <PathBack>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/latency_bg.png</PathBack>
-            <PathVu>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/latency_over.png</PathVu>
+            <Size>81f,6f</Size>
+            <PathBack>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/vu_toolbar_level_bg_light.png</PathBack>
+            <PathVu>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/vu_toolbar_level_active.png</PathVu>
             <Horizontal>true</Horizontal>
             <PeakHoldSize>5</PeakHoldSize>
             <PeakHoldTime>500</PeakHoldTime>
@@ -30,25 +31,31 @@
               <ConfigKey>[Main],vu_meter_left</ConfigKey>
             </Connection>
           </VuMeter>
+          <StatusLight>
+            <TooltipId>main_peak_indicator_left</TooltipId>
+            <ObjectName>ToolbarMainClipLeft</ObjectName>
+            <Size>11f,6f</Size>
+            <PathBack>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/vu_toolbar_clipping_bg_light.png</PathBack>
+            <PathStatusLight>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/vu_toolbar_clipping_active.png</PathStatusLight>
+            <Connection>
+              <ConfigKey>[Main],peak_indicator_left</ConfigKey>
+            </Connection>
+          </StatusLight>
         </Children>
-        <Connection>
-          <ConfigKey>[Main],peak_indicator_left</ConfigKey>
-          <BindProperty>highlight</BindProperty>
-        </Connection>
       </WidgetGroup>
 
       <WidgetGroup><Size>1min,2f</Size></WidgetGroup>
 
       <WidgetGroup>
         <ObjectName>ToolbarMainVuMeterRight</ObjectName>
-        <Size>61f,7f</Size>
-        <Layout>vertical</Layout>
+        <Size>92f,6f</Size>
+        <Layout>horizontal</Layout>
         <Children>
           <VuMeter>
             <TooltipId>main_VuMeterR</TooltipId>
-            <Size>59f,5f</Size>
-            <PathBack>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/latency_bg.png</PathBack>
-            <PathVu>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/latency_over.png</PathVu>
+            <Size>81f,6f</Size>
+            <PathBack>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/vu_toolbar_level_bg_light.png</PathBack>
+            <PathVu>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/vu_toolbar_level_active.png</PathVu>
             <Horizontal>true</Horizontal>
             <PeakHoldSize>5</PeakHoldSize>
             <PeakHoldTime>500</PeakHoldTime>
@@ -58,11 +65,17 @@
               <ConfigKey>[Main],vu_meter_right</ConfigKey>
             </Connection>
           </VuMeter>
+          <StatusLight>
+            <TooltipId>main_peak_indicator_right</TooltipId>
+            <ObjectName>ToolbarMainClipRight</ObjectName>
+            <Size>11f,6f</Size>
+            <PathBack>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/vu_toolbar_clipping_bg_light.png</PathBack>
+            <PathStatusLight>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/vu_toolbar_clipping_active.png</PathStatusLight>
+            <Connection>
+              <ConfigKey>[Main],peak_indicator_right</ConfigKey>
+            </Connection>
+          </StatusLight>
         </Children>
-        <Connection>
-          <ConfigKey>[Main],peak_indicator_right</ConfigKey>
-          <BindProperty>highlight</BindProperty>
-        </Connection>
       </WidgetGroup>
     </Children>
   </WidgetGroup>
