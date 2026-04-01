@@ -141,6 +141,7 @@ QAbstractScrollArea::corner {
 /* recessed regions */
 #WaveformBox1,
 #WaveformBox2,
+#WaveformDeckInfo,
 #WaveformsFrame,
 #OverviewBox,
 #OverviewBoxMini,
@@ -170,7 +171,8 @@ WSearchLineEdit {
   #WaveformsFrame,
   #OverviewBox,
   #OverviewBoxMini,
-  WSearchLineEdit {
+  WSearchLineEdit,
+  #WaveformDeckInfo {
     border-radius: 1px;
   }
   #OverviewBox[highlight="1"],
@@ -1366,6 +1368,14 @@ WEffectChainPresetSelector QAbstractScrollArea,
 #SkinSettingsToggle[displayValue="0"],
 #LibraryFeatureControls QLabel {
   color: #777;
+}
+
+#WaveformDeckInfoTitle {
+  color: #8d8d8d;
+}
+
+#WaveformDeckInfoText {
+  color: #d0d0d0;
 }
 
 /* Darker grey for knob labels & inactive decks/units */

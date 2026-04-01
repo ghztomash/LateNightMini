@@ -94,6 +94,7 @@ WTrackProperty:hover[selected="true"],
 /* borders of embedded regions like deck buttons & Main mixer */
 #WaveformBox1,
 #WaveformBox2,
+#WaveformDeckInfo,
 #DeckRow_5_LoopCuesTransport,
 #DeckRow_5_LoopCuesTransportCompact,
 #MainControls, #HeadphoneControls,
@@ -114,7 +115,8 @@ WSearchLineEdit,
     border-bottom: 1px solid #0c0c0c;
   }
   #WaveformBox1,
-  #WaveformBox2 {
+  #WaveformBox2,
+  #WaveformDeckInfo {
     border-radius: 0px;
   }
   /* some get a background image */
@@ -1226,6 +1228,14 @@ WBpmEditor QDoubleSpinBox,
 #LibraryFeatureControls QLabel,
 #LibraryFeatureControls QRadioButton {
   color: #888;
+}
+
+#WaveformDeckInfoTitle {
+  color: #a7a7a7;
+}
+
+#WaveformDeckInfoText {
+  color: #d2d2d1;
 }
 
 /* Darker grey for knob labels & inactive decks/units */

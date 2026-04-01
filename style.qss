@@ -260,6 +260,8 @@ WEffectChainPresetSelector QAbstractScrollArea,
 #MicAuxLabel, #MicAuxLabelUnconfigured,
 #PreviewTitle,
 #PreviewLabel,
+#WaveformDeckInfoTitle,
+#WaveformDeckInfoText,
 WBeatSpinBox,
 #spinBoxTransition {
   font-size: 14px;
@@ -295,8 +297,23 @@ WRecordingDuration {
 #MicAuxLabel,
 #MicAuxLabelUnconfigured,
 #PreviewTitle,
-#PreviewLabel {
+#PreviewLabel,
+#WaveformDeckInfoTitle,
+#WaveformDeckInfoText {
   text-align: left;
+}
+
+#WaveformDeckInfoTitle,
+#WaveformDeckInfoText {
+  padding: 0px 8px;
+}
+
+#WaveformDeckInfoTitle {
+  font-size: 14px;
+}
+
+#WaveformDeckInfoText {
+  font-size: 12px;
 }
 
 #RateText,
