@@ -1230,8 +1230,17 @@ WBpmEditor QDoubleSpinBox,
   color: #888;
 }
 
-#WaveformDeckInfoTitle {
+  #WaveformDeckInfoTitle {
   color: #a7a7a7;
+}
+
+#WaveformLoopSizeLabel {
+  color: #888;
+  border-top: 1px solid #0a0a0a;
+  border-left: 1px solid #0a0a0a;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+  background-color: #0f0f0f;
 }
 
 #WaveformDeckInfoText {

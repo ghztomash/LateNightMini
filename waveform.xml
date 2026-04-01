@@ -25,12 +25,6 @@
         <Layout>vertical</Layout>
         <Size>94f,62min</Size>
         <Children>
-          <Label>
-            <ObjectName>WaveformDeckInfoTitle</ObjectName>
-            <Size>94f,14f</Size>
-            <Text>DECK <Variable name="ChanNum"/></Text>
-          </Label>
-
             <WidgetGroup>
             <Size>1min,2min</Size>
             </WidgetGroup>
@@ -53,14 +47,16 @@
                 <SetVariable name="ConfigKeyDisp"><Variable name="Group"/>,loop_enabled</SetVariable>
               </Template>
 
-              <BeatSpinBox>
+              <Number>
                 <TooltipId>beatloop_size</TooltipId>
-                <ObjectName>Spinbox_<Variable name="BtnType"/></ObjectName>
-                <SizePolicy>me,min</SizePolicy>
-                <MinimumSize>48,36</MinimumSize>
-                <MaximumSize>48,36</MaximumSize>
-                <Value><Variable name="Group"/>,beatloop_size</Value>
-              </BeatSpinBox>
+                <ObjectName>WaveformLoopSizeLabel</ObjectName>
+                <Size>36f,26f</Size>
+                <Alignment>center</Alignment>
+                <NumberOfDigits>0</NumberOfDigits>
+                <Connection>
+                  <ConfigKey><Variable name="Group"/>,beatloop_size</ConfigKey>
+                </Connection>
+              </Number>
             </Children>
           </WidgetGroup>
 
@@ -90,10 +86,6 @@
                 <SetVariable name="state_1_text"></SetVariable>
                 <SetVariable name="ConfigKey"><Variable name="Group"/>,keylock</SetVariable>
               </Template>
-
-            <WidgetGroup>
-            <Size>12f,1min</Size>
-            </WidgetGroup>
 
             </Children>
           </WidgetGroup>
