@@ -12,21 +12,6 @@
           <WidgetGroup><Size>0min,0me</Size></WidgetGroup>
 
           <WidgetGroup>
-            <ObjectName>Stars</ObjectName>
-            <Layout>vertical</Layout>
-            <Size>0min,15f</Size>
-            <Children>
-              <StarRating>
-                <TooltipId>starrating</TooltipId>
-                <Size>75f,15f</Size>
-                <Channel><Variable name="ChanNum"/></Channel>
-              </StarRating>
-            </Children>
-          </WidgetGroup>
-
-          <WidgetGroup><Size>0min,1me</Size></WidgetGroup>
-
-          <WidgetGroup>
             <ObjectName>DeckSettingsGrid</ObjectName>
             <Layout>horizontal</Layout>
             <Children>

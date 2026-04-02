@@ -37,21 +37,6 @@
         </Connection>
       </WidgetGroup>
 
-      <WidgetGroup>
-        <ObjectName>DeckSettingsContainerCompact</ObjectName>
-        <SizePolicy>min,me</SizePolicy>
-        <Layout>horizontal</Layout>
-        <Children>
-          <SingletonContainer>
-            <ObjectName>DeckSettings<Variable name="ChanNum"/></ObjectName>
-          </SingletonContainer>
-        </Children>
-        <Connection>
-          <ConfigKey persist="true">[Skin],show_rate_controls_compact</ConfigKey>
-          <BindProperty>highlight</BindProperty>
-        </Connection>
-      </WidgetGroup>
-
     </Children>
   </WidgetGroup><!-- DeckRow_4_OverviewSpinny -->
 </Template>

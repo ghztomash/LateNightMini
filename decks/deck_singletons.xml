@@ -20,13 +20,6 @@
     </SingletonDefinition>
 
     <SingletonDefinition>
-      <ObjectName>DeckSettings<Variable name="ChanNum"/></ObjectName>
-      <Children>
-        <Template src="skin:../LateNightMini/decks/deck_settings.xml"/>
-      </Children>
-    </SingletonDefinition>
-
-    <SingletonDefinition>
       <ObjectName>KeyControls<Variable name="ChanNum"/></ObjectName>
       <Children>
         <Template src="skin:../LateNightMini/decks/key_controls.xml"/>
