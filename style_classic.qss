@@ -239,6 +239,9 @@ WSearchLineEdit,
   #BatteryBox {
     margin-bottom: 0px;
   }
+  #Battery {
+    margin-left: 7px;
+  }
   #ClockWidget {
     margin-bottom: 0px;
   }
