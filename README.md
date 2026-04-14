@@ -11,6 +11,8 @@ Its intended to be used with a MIDI controller like the DDJ-FLX4 and a Raspberry
 
 ![PaleMoon preview](./skin_preview_PaleMoon.png)
 
+![PaleMoon library preview](./skin_preview_library.png)
+
 ### Classic
 
 ![Classic preview](./skin_preview_Classic.png)
