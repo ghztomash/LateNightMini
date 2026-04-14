@@ -2,7 +2,7 @@
   LateNightMini, Resizable skin for Mixxx 2.3.x
   www.mixxx.org
   Copyright (C) 2010-2013 jus <s.brandt@mixxx.org>, 2014 Owen Williams <owilliams@mixxx.org>,
-  2019-2021 ronso0 <ronso0@mixxx.org>
+  2019-2021 ronso0 <ronso0@mixxx.org>, 2026 Tomash Ghz <ghz.tomash@hotmail.com>
   "LateNightMini" is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported license.
   http://creativecommons.org/licenses/by-sa/3.0/
 
@@ -31,7 +31,7 @@
   <manifest>
     <title>LateNightMini</title>
     <author>owilliams, ronso0, tomash_ghz</author>
-    <version>2.4.0.01</version>
+    <version>1.0.0</version>
     <description>A wide nighttime skin with stacked waveforms, 2 decks in 3 configurations and up to 16 samplers.</description>
     <language>en</language>
     <license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
