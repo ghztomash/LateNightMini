@@ -55,6 +55,11 @@
                 <ObjectName>DeckRateSpacer</ObjectName>
                 <SizePolicy>min,min</SizePolicy>
                 <Children/>
+                <Connection>
+                  <ConfigKey persist="true">[LateNightMini],show_vumeters_compact</ConfigKey>
+                  <Transform><Not/></Transform>
+                  <BindProperty>visible</BindProperty>
+                </Connection>
               </WidgetGroup>
             </Children>
             <Connection>

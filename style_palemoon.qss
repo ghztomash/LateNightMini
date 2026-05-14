@@ -59,6 +59,8 @@
 #WaveformsContainer,
 #MainControls,
 #HeadphoneControls,
+#VuMeterDeck1_Compact,
+#VuMeterDeck2_Compact,
 #FxUnitHeaderCollapsed,
 #FxUnitHeaderExpanded,
 #SamplerExpandBox,
@@ -390,8 +392,8 @@ WTrackProperty[selected="true"],
 **********************************************************************/
 
 #ToolbarDeckSpacer {
-  min-height: 3px;
-  max-height: 3px;
+  min-height: 2px;
+  max-height: 2px;
 }
 
 /* Since the toolbar is dim in PaleMoon, we don't need an extra margin
@@ -399,6 +401,11 @@ WTrackProperty[selected="true"],
 #MiniDecksTopSpacer {
   min-height: 0px;
   max-height: 0px;
+}
+
+#CompactDecksCenterSpacer {
+  min-width: 2px;
+  max-width: 2px;
 }
 
 #DeckRateSpacer {
@@ -423,6 +430,8 @@ WTrackProperty[selected="true"],
 #Deck1, #DeckCompact1, #DeckMini1,
 #Deck2, #DeckCompact2, #DeckMini2,
 #MixerContainer,
+#VuMeterDeck1_Compact,
+#VuMeterDeck2_Compact,
 #FxUnit1, #FxUnit3,
 #FxUnit2, #FxUnit4,
 #FxRackFillerR,
@@ -452,6 +461,12 @@ WTrackProperty[selected="true"],
 #MicRack, #AuxRack {
   margin-left: 2px;
 }
+/* gap in between compact decks is managed
+  by #CompactDecksCenterSpacer in order to have VU meters
+  directly attached to each deck.
+  A highlight connection to [LateNightMini],show_vumeters_compact
+  can be used for the borders but screws up the margin: contents
+  are rendered beyond the parent border */
 #MixerContainer {
   margin-right: 1px;
   margin-left: 1px;
@@ -826,6 +841,18 @@ WBpmEditor QDoubleSpinBox::down-button {
   margin: 5px 0px;
 }
 
+#VuMeterDeck1_Compact {
+  padding: 0px 2px 0px 3px;
+  border-left: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+#VuMeterDeck2_Compact {
+  padding: 0px 3px 0px 2px;
+  border-right: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 /************** Effects *************************************************/
 
 #FxUnitHeaderCollapsed[highlight="0"],

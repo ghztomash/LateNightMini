@@ -24,6 +24,8 @@
 #WaveformsContainer,
 #Deck1, #DeckCompact1, #DeckMini1,
 #Deck2, #DeckCompact2, #DeckMini2,
+#VuMeterDeck1_Compact,
+#VuMeterDeck2_Compact,
 #FxUnit1, #FxUnit2, #FxUnit3, #FxUnit4,
 #FxUnitControlsExpanded, #FxUnitControlsCollapsed,
 #FxSlotsExpanded, #FxSlotsCollapsed,
@@ -50,6 +52,8 @@ WStarRating {
 #Deck1, #DeckCompact1, #DeckMini1,
 #Deck2, #DeckCompact2, #DeckMini2,
 #MixerContainer,
+#VuMeterDeck1_Compact,
+#VuMeterDeck2_Compact,
 #FxUnit1, #FxUnit2, #FxUnit3, #FxUnit4,
 #MicDuckingContainer, #MicAuxUnit, #MicAuxAddFrame,
 #Sampler, #SamplerMini,
@@ -342,13 +346,18 @@ WLibrary {
 **********************************************************************/
 
 #ToolbarDeckSpacer {
-  min-height: 4px;
-  max-height: 4px;
+  min-height: 2px;
+  max-height: 2px;
 }
 
 #MiniDecksTopSpacer {
   min-height: 4px;
   max-height: 4px;
+}
+
+#CompactDecksCenterSpacer {
+  min-width: 2px;
+  max-width: 2px;
 }
 
 #DeckRateSpacer {
@@ -359,6 +368,8 @@ WLibrary {
 #Deck1, #DeckCompact1, #DeckMini1,
 #Deck2, #DeckCompact2, #DeckMini2,
 #MixerContainer,
+#VuMeterDeck1_Compact,
+#VuMeterDeck2_Compact,
 #FxUnit1, #FxUnit3,
 #FxUnit2, #FxUnit4,
 #FxRackFillerR,
@@ -388,6 +399,12 @@ WLibrary {
 #MicRack, #AuxRack {
   margin-left: 2px;
 }
+/* gap in between compact decks is managed
+  by #CompactDecksCenterSpacer in order to have VU meters
+  directly attached to each deck.
+  A highlight connection to [LateNightMini],show_vumeters_compact
+  can be used for the borders but screws up the margin: contents
+  are rendered beyond the parent border */
 #SamplerRow {
   qproperty-layoutSpacing: 4;
 }
@@ -805,6 +822,17 @@ WBpmEditor QDoubleSpinBox::down-button {
 }
 #VuMeterMain_4Decks {
   margin: 5px 0px;
+}
+
+#VuMeterDeck1_Compact {
+  padding: 0px 2px 0px 3px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 1px;
+}
+#VuMeterDeck2_Compact {
+  padding: 0px 3px 0px 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 1px;
 }
 
 /************** Fx *********************************************************/

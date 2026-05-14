@@ -52,6 +52,13 @@ Description:
         </Children>
       </WidgetGroup>
 
+      <!-- Level meters -->
+      <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
+        <SetVariable name="TooltipId">show_vinylcontrol</SetVariable>
+        <SetVariable name="Text">VU meters</SetVariable>
+        <SetVariable name="Setting">[LateNightMini],show_vumeters_compact</SetVariable>
+      </Template>
+
       <!-- Spinny -->
       <Template src="skin:../LateNightMini/helpers/skin_settings_button_2state.xml">
         <SetVariable name="TooltipId">show_spinny</SetVariable>
