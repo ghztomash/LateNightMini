@@ -404,8 +404,8 @@ WTrackProperty[selected="true"],
 }
 
 #CompactDecksCenterSpacer {
-  min-width: 2px;
-  max-width: 2px;
+  min-width: 0px;
+  max-width: 0px;
 }
 
 #DeckRateSpacer {
@@ -442,7 +442,7 @@ WTrackProperty[selected="true"],
   margin-bottom: 3px;
 }
 
-#Deck1, #DeckMini1,
+#Deck1,
 #MixerContainer,
 #FxUnit1,
 #FxUnit3,
@@ -452,7 +452,7 @@ WTrackProperty[selected="true"],
   margin-right: 2px;
 }
 
-#Deck2, #DeckMini2,
+#Deck2,
 #MixerContainer,
 #FxUnit2,
 #FxUnit4,
@@ -460,6 +460,13 @@ WTrackProperty[selected="true"],
 #FxRackFillerR,
 #MicRack, #AuxRack {
   margin-left: 2px;
+}
+#Deck1,
+#Deck2,
+#DeckMini1,
+#DeckMini2 {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 /* gap in between compact decks is managed
   by #CompactDecksCenterSpacer in order to have VU meters
@@ -842,13 +849,13 @@ WBpmEditor QDoubleSpinBox::down-button {
 }
 
 #VuMeterDeck1_Compact {
-  padding: 0px 2px 0px 3px;
+  padding: 0px 0px 0px 1px;
   border-left: 0px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 #VuMeterDeck2_Compact {
-  padding: 0px 3px 0px 2px;
+  padding: 0px 1px 0px 0px;
   border-right: 0px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
