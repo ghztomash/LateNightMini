@@ -459,7 +459,35 @@
                                 <Template src="skin:../LateNightMini/mixer/vumeters_compact.xml"/>
                               </Children>
                               <Connection>
+                                <ConfigKey>[LateNightMini],show_full_deck</ConfigKey>
+                                <BindProperty>visible</BindProperty>
+                              </Connection>
+                            </WidgetGroup>
+                            <WidgetGroup>
+                              <SizePolicy>min,me</SizePolicy>
+                              <Layout>vertical</Layout>
+                              <Children>
+                                <WidgetGroup>
+                                  <ObjectName>CompactDecksCenterSpacer</ObjectName>
+                                </WidgetGroup>
+                                <Template src="skin:../LateNightMini/mixer/vumeters_compact.xml"/>
+                              </Children>
+                              <Connection>
                                 <ConfigKey>[LateNightMini],show_compact_deck</ConfigKey>
+                                <BindProperty>visible</BindProperty>
+                              </Connection>
+                            </WidgetGroup>
+                            <WidgetGroup>
+                              <SizePolicy>min,me</SizePolicy>
+                              <Layout>vertical</Layout>
+                              <Children>
+                                <WidgetGroup>
+                                  <ObjectName>CompactDecksCenterSpacer</ObjectName>
+                                </WidgetGroup>
+                                <Template src="skin:../LateNightMini/mixer/vumeters_mini.xml"/>
+                              </Children>
+                              <Connection>
+                                <ConfigKey>[LateNightMini],show_mini_deck</ConfigKey>
                                 <BindProperty>visible</BindProperty>
                               </Connection>
                             </WidgetGroup>
