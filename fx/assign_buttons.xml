@@ -36,40 +36,6 @@ Variables:
             <SetVariable name="Text">&#8202;FX</SetVariable>
           </Template>
         </Children>
-        <Connection>
-          <ConfigKey>[Skin],show_4effectunits</ConfigKey>
-          <Transform><Not/></Transform>
-          <BindProperty>visible</BindProperty>
-        </Connection>
-      </WidgetGroup>
-
-      <WidgetGroup>
-        <ObjectName>FxAssignButtons</ObjectName>
-        <Layout>horizontal</Layout>
-        <SizePolicy>f,min</SizePolicy>
-        <Children>
-          <Template src="skin:../LateNightMini/fx/assign_button.xml">
-            <SetVariable name="FxUnit">1</SetVariable>
-            <SetVariable name="Width">26</SetVariable>
-            <SetVariable name="Text">&#8202;FX&#8202;</SetVariable>
-          </Template>
-          <Template src="skin:../LateNightMini/fx/assign_button.xml">
-            <SetVariable name="FxUnit">2</SetVariable>
-            <SetVariable name="Width">20</SetVariable>
-          </Template>
-          <Template src="skin:../LateNightMini/fx/assign_button.xml">
-            <SetVariable name="FxUnit">3</SetVariable>
-            <SetVariable name="Width">20</SetVariable>
-          </Template>
-          <Template src="skin:../LateNightMini/fx/assign_button.xml">
-            <SetVariable name="FxUnit">4</SetVariable>
-            <SetVariable name="Width">20</SetVariable>
-          </Template>
-        </Children>
-        <Connection>
-          <ConfigKey>[Skin],show_4effectunits</ConfigKey>
-          <BindProperty>visible</BindProperty>
-        </Connection>
       </WidgetGroup>
     </Children>
   </WidgetGroup>
