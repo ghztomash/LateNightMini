@@ -49,45 +49,10 @@
               <Template src="skin:../LateNightMini/fx/unit.xml">
                 <SetVariable name="FxUnit">1</SetVariable>
               </Template>
-
-              <WidgetGroup>
-                <ObjectName>FxRackFillerL</ObjectName>
-                <SizePolicy>min,me</SizePolicy>
-                <Connection>
-                  <ConfigKey>[EffectRack1_EffectUnit2],show_parameters</ConfigKey>
-                  <BindProperty>visible</BindProperty>
-                </Connection>
-              </WidgetGroup>
             </Children>
           </WidgetGroup>
         </Children>
       </WidgetGroup><!-- EffectUnit 1 -->
-
-      <!-- EffectUnit 2 -->
-      <WidgetGroup>
-        <Layout>vertical</Layout>
-        <SizePolicy>me,min</SizePolicy>
-        <Children>
-          <WidgetGroup>
-            <Layout>vertical</Layout>
-            <SizePolicy>i,min</SizePolicy>
-            <Children>
-              <Template src="skin:../LateNightMini/fx/unit.xml">
-                <SetVariable name="FxUnit">2</SetVariable>
-              </Template>
-
-              <WidgetGroup>
-                <ObjectName>FxRackFillerR</ObjectName>
-                <SizePolicy>min,me</SizePolicy>
-                <Connection>
-                  <ConfigKey>[EffectRack1_EffectUnit1],show_parameters</ConfigKey>
-                  <BindProperty>visible</BindProperty>
-                </Connection>
-              </WidgetGroup>
-            </Children>
-          </WidgetGroup>
-        </Children>
-      </WidgetGroup><!-- EffectUnit 2 -->
 
     </Children>
     <Connection>

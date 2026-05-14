@@ -30,11 +30,6 @@ Variables:
             <SetVariable name="Width">26</SetVariable>
             <SetVariable name="Text">&#8202;FX</SetVariable>
           </Template>
-          <Template src="skin:../LateNightMini/fx/assign_button.xml">
-            <SetVariable name="FxUnit">2</SetVariable>
-            <SetVariable name="Width">26</SetVariable>
-            <SetVariable name="Text">&#8202;FX</SetVariable>
-          </Template>
         </Children>
       </WidgetGroup>
     </Children>
