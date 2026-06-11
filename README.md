@@ -19,6 +19,10 @@ Its intended to be used with a MIDI controller like the DDJ-FLX4 and a [Raspberr
 
 ![Classic preview](./skin_preview_Classic.png)
 
+### WhiteNight
+
+Bright daytime variant based on PaleMoon.
+
 ## Features
 
 - Two-deck layout with size modes: full, compact, and mini
@@ -26,7 +30,7 @@ Its intended to be used with a MIDI controller like the DDJ-FLX4 and a [Raspberr
 - Waveform overviews
 - Keylock and Quantize buttons
 - Conditional Preferences, Fullscreen, and Quit buttons when supported by Mixxx
-- Built-in themes: `PaleMoon` and `Classic`
+- Built-in themes: `PaleMoon`, `Classic`, and `WhiteNight`
 
 ## Installation
 
