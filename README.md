@@ -20,7 +20,7 @@ Its intended to be used with a MIDI controller like the DDJ-FLX4 and a [Raspberr
 ## Features
 
 - Two-deck layout with size modes: full, compact, and mini
-- Optimized for small touch displays 760x440 
+- Optimized for small touch displays 760x440
 - Waveform overviews
 - Keylock and Quantize buttons
 - Built-in themes: `PaleMoon` and `Classic`
@@ -56,6 +56,6 @@ Based on the work of:
 For more inspiration, check out the amazing work of:
 
 - [Pioneered](https://github.com/timewasternl/Pioneered)
-- (XDJ100SX)[https://github.com/marcmonka/XDJ100SX]
+- [XDJ100SX](https://github.com/marcmonka/XDJ100SX)
 - [Compact Skin for Raspberry Pi 10.1 touch display](https://mixxx.discourse.group/t/compact-skin-for-raspberry-pi-10-1-touch-display/28955)
 - [Mobile Deere Skin for 8” touch screen](https://mixxx.discourse.group/t/mobile-deere-skin-for-8-touch-screen/27917)
