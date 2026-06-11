@@ -2219,7 +2219,7 @@ QPushButton#pushButtonRepeatPlaylist:!checked {
 #CueSavedLoopButton:checked {
   background-color: #db0000;
   outline: none;
-  image: url(skin:/classic/buttons/btn__loop_active.svg);
+  image: url(skin:/classic/buttons/btn__loop.svg);
 }
 
 #CueSavedJumpButton:pressed, WCueMenuPopup #CueSavedJumpButton:checked,
