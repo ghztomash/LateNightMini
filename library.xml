@@ -50,7 +50,7 @@
                         <ObjectName>LibExpandBox</ObjectName>
                         <Layout>vertical</Layout>
                         <Children>
-                          <Template src="skin:../LateNightMini/controls/button_2state.xml">
+                          <Template src="skin:/controls/button_2state.xml">
                             <SetVariable name="TooltipId">maximize_library</SetVariable>
                             <SetVariable name="ObjectName">LibExpand</SetVariable>
                             <SetVariable name="Size">18f,18me</SetVariable>

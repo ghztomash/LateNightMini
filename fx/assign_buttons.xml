@@ -25,7 +25,7 @@ Variables:
         <Layout>horizontal</Layout>
         <SizePolicy>f,min</SizePolicy>
         <Children>
-          <Template src="skin:../LateNightMini/fx/assign_button.xml">
+          <Template src="skin:/fx/assign_button.xml">
             <SetVariable name="FxUnit">1</SetVariable>
             <SetVariable name="Width">26</SetVariable>
             <SetVariable name="Text">&#8202;FX</SetVariable>

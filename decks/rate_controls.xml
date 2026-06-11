@@ -138,8 +138,8 @@
                         <Size>40f,119f</Size>
                         <Pos>5,2</Pos>
                         <TooltipId>rate</TooltipId>
-                        <Handle scalemode="STRETCH_ASPECT">skin:../LateNightMini/<Variable name="SliderScheme"/>/sliders/knob_pitch_deck.svg</Handle>
-                        <Slider scalemode="STRETCH_ASPECT">skin:../LateNightMini/<Variable name="SliderScheme"/>/sliders/slider_pitch_deck.svg</Slider>
+                        <Handle scalemode="STRETCH_ASPECT">skin:/<Variable name="SliderScheme"/>/sliders/knob_pitch_deck.svg</Handle>
+                        <Slider scalemode="STRETCH_ASPECT">skin:/<Variable name="SliderScheme"/>/sliders/slider_pitch_deck.svg</Slider>
                         <Horizontal>false</Horizontal>
                         <BarWidth><Variable name="BarWidth"/></BarWidth>
                         <BarMargins><Variable name="BarMarginPitch"/></BarMargins>

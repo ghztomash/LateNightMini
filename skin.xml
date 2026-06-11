@@ -115,7 +115,7 @@
     <Scheme>
       <Name>PaleMoon</Name>
       <!-- Mix any of the existing button, knob, slider or style theme subsets.
-        The button templates for example link to skin:../LateNightMini/BtnTheme/buttons/btn_...
+        The button templates for example link to skin:/BtnTheme/buttons/btn_...
 
         BtnScheme     borders / background images for pushbuttons, spinboxes,
                       effect selector, AutoDJ fade mode selector.
@@ -132,7 +132,7 @@
           background-color: #0f0f0f;
         }
         QLabel {
-          image: url(skin:../LateNightMini/palemoon/style/mixxx_logo.svg);
+          image: url(skin:/palemoon/style/mixxx_logo.svg);
           padding: 0;
           margin: 0px 2px 0px 2px;
           border: none;
@@ -142,7 +142,7 @@
           max-height: 40px;
         }
         QProgressBar {
-          background: url(skin:../LateNightMini/palemoon/style/progressbar_bg.svg);
+          background: url(skin:/palemoon/style/progressbar_bg.svg);
           border: none;
           min-width: 164px;
           max-width: 164px;
@@ -150,11 +150,11 @@
           max-height: 5px;
         }
         QProgressBar::chunk {
-          background: url(skin:../LateNightMini/palemoon/style/progressbar.svg);
+          background: url(skin:/palemoon/style/progressbar.svg);
         }
       </LaunchImageStyle>
 
-      <Style src="skin:../LateNightMini/style_palemoon.qss"/>
+      <Style src="skin:/style_palemoon.qss"/>
 
       <SetVariable name="BtnScheme">palemoon</SetVariable>
       <SetVariable name="KnobScheme">palemoon</SetVariable>
@@ -203,7 +203,7 @@
            Other buttons that use text (like vinyl controls and Fx assign button) are styled
            in css via
               border-width: 2px;
-              border-image: url(skin:../LateNightMini/path/to/btn_icon.svg) 2 2 2 2;
+              border-image: url(skin:/path/to/btn_icon.svg) 2 2 2 2;
         Example themes: (in PaleMoon only the embedded style is used)
         * elevated: domed buttons that stand out, with a 3D border and a drop shadow
         * embedded: slightly domed buttons that seem leveled with surface and a surrounding groove
@@ -261,7 +261,7 @@
           background-color: #1e1e1e;
         }
         QLabel {
-          image: url(skin:../LateNightMini/classic/style/mixxx_logo.svg);
+          image: url(skin:/classic/style/mixxx_logo.svg);
           padding: 0;
           margin: 0px 2px 0px 2px;
           border: none;
@@ -271,7 +271,7 @@
           max-height: 42px;
         }
         QProgressBar {
-          background: url(skin:../LateNightMini/classic/style/progressbar_bg.svg);
+          background: url(skin:/classic/style/progressbar_bg.svg);
           border: none;
           min-width: 160px;
           max-width: 160px;
@@ -279,11 +279,11 @@
           max-height: 5px;
         }
         QProgressBar::chunk {
-          background: url(skin:../LateNightMini/classic/style/progressbar.svg);
+          background: url(skin:/classic/style/progressbar.svg);
         }
       </LaunchImageStyle>
 
-      <Style src="skin:../LateNightMini/style_classic.qss"/>
+      <Style src="skin:/style_classic.qss"/>
 
       <SetVariable name="BtnScheme">classic</SetVariable>
       <SetVariable name="KnobScheme">classic</SetVariable>
@@ -333,7 +333,7 @@
   </Schemes>
 
   <ObjectName>Mixxx</ObjectName>
-  <Style src="skin:../LateNightMini/style.qss"
+  <Style src="skin:/style.qss"
          src-linux="skins:default-menu-styles-linux.qss"
          src-windows="skins:default-menu-styles-windows.qss"/>
   <!-- MinimumSize should not be an exact monitor resolution. There needs
@@ -352,7 +352,7 @@
     <SingletonDefinition>
       <ObjectName>Deck1_Src</ObjectName>
       <Children>
-      <Template src="skin:../LateNightMini/decks/deck.xml">
+      <Template src="skin:/decks/deck.xml">
         <SetVariable name="ChanNum">1</SetVariable>
         <SetVariable name="DeckGroup">12</SetVariable>
         <SetVariable name="SignalColor"><Variable name="SignalColor_12"/></SetVariable>
@@ -364,7 +364,7 @@
     <SingletonDefinition>
       <ObjectName>Deck2_Src</ObjectName>
       <Children>
-        <Template src="skin:../LateNightMini/decks/deck.xml">
+        <Template src="skin:/decks/deck.xml">
           <SetVariable name="ChanNum">2</SetVariable>
           <SetVariable name="DeckGroup">12</SetVariable>
           <SetVariable name="SignalColor"><Variable name="SignalColor_12"/></SetVariable>
@@ -376,14 +376,14 @@
     <SingletonDefinition>
       <ObjectName>LibrarySingleton</ObjectName>
       <Children>
-        <Template src="skin:../LateNightMini/library.xml"/>
+        <Template src="skin:/library.xml"/>
       </Children>
     </SingletonDefinition>
 
     <SingletonDefinition>
       <ObjectName>SamplerSettingsSingleton</ObjectName>
       <Children>
-        <Template src="skin:../LateNightMini/helpers/skin_settings_samplers.xml"/>
+        <Template src="skin:/helpers/skin_settings_samplers.xml"/>
       </Children>
     </SingletonDefinition>
 
@@ -393,7 +393,7 @@
       <SizePolicy>me,me</SizePolicy>
       <Children>
 
-        <Template src="skin:../LateNightMini/toolbar.xml"/>
+        <Template src="skin:/toolbar.xml"/>
 
         <!-- regular/maximized library  |  skin settings menu -->
         <WidgetGroup>
@@ -421,7 +421,7 @@
                       <Layout>vertical</Layout>
                       <SizePolicy>me,me</SizePolicy>
                       <Children>
-                        <Template src="skin:../LateNightMini/waveforms_container.xml"/>
+                        <Template src="skin:/waveforms_container.xml"/>
                       </Children>
                       <Connection>
                         <ConfigKey persist="true">[Skin],show_waveforms</ConfigKey>
@@ -447,7 +447,7 @@
                           <Layout>horizontal</Layout>
                           <SizePolicy>me,max</SizePolicy>
                           <Children>
-                            <Template src="skin:../LateNightMini/decks/decks_left.xml"/>
+                            <Template src="skin:/decks/decks_left.xml"/>
                             <WidgetGroup>
                               <SizePolicy>min,me</SizePolicy>
                               <Layout>vertical</Layout>
@@ -455,7 +455,7 @@
                                 <WidgetGroup>
                                   <ObjectName>CompactDecksCenterSpacer</ObjectName>
                                 </WidgetGroup>
-                                <Template src="skin:../LateNightMini/mixer/vumeters_compact.xml"/>
+                                <Template src="skin:/mixer/vumeters_compact.xml"/>
                               </Children>
                               <Connection>
                                 <ConfigKey>[LateNightMini],show_full_deck</ConfigKey>
@@ -469,7 +469,7 @@
                                 <WidgetGroup>
                                   <ObjectName>CompactDecksCenterSpacer</ObjectName>
                                 </WidgetGroup>
-                                <Template src="skin:../LateNightMini/mixer/vumeters_compact.xml"/>
+                                <Template src="skin:/mixer/vumeters_compact.xml"/>
                               </Children>
                               <Connection>
                                 <ConfigKey>[LateNightMini],show_compact_deck</ConfigKey>
@@ -483,20 +483,20 @@
                                 <WidgetGroup>
                                   <ObjectName>CompactDecksCenterSpacer</ObjectName>
                                 </WidgetGroup>
-                                <Template src="skin:../LateNightMini/mixer/vumeters_mini.xml"/>
+                                <Template src="skin:/mixer/vumeters_mini.xml"/>
                               </Children>
                               <Connection>
                                 <ConfigKey>[LateNightMini],show_mini_deck</ConfigKey>
                                 <BindProperty>visible</BindProperty>
                               </Connection>
                             </WidgetGroup>
-                            <Template src="skin:../LateNightMini/decks/decks_right.xml"/>
+                            <Template src="skin:/decks/decks_right.xml"/>
                           </Children>
                         </WidgetGroup>
 
-                        <Template src="skin:../LateNightMini/fx_rack.xml"/>
-                        <Template src="skin:../LateNightMini/samplers_rack.xml"/>
-                        <Template src="skin:../LateNightMini/mic_aux_rack.xml"/>
+                        <Template src="skin:/fx_rack.xml"/>
+                        <Template src="skin:/samplers_rack.xml"/>
+                        <Template src="skin:/mic_aux_rack.xml"/>
 
                         <SingletonContainer>
                           <ObjectName>LibrarySingleton</ObjectName>
@@ -518,8 +518,8 @@
                       <Layout>horizontal</Layout>
                       <SizePolicy>me,max</SizePolicy>
                       <Children>
-                        <Template src="skin:../LateNightMini/decks/decks_left_mini.xml"/>
-                        <Template src="skin:../LateNightMini/decks/decks_right_mini.xml"/>
+                        <Template src="skin:/decks/decks_left_mini.xml"/>
+                        <Template src="skin:/decks/decks_right_mini.xml"/>
                       </Children>
                       <Connection>
                         <ConfigKey persist="true">[LateNightMini],max_lib_show_decks</ConfigKey>
@@ -535,7 +535,7 @@
 
               </Children>
             </WidgetStack>
-            <Template src="skin:../LateNightMini/skin_settings.xml"/>
+            <Template src="skin:/skin_settings.xml"/>
 
           </Children>
         </WidgetGroup><!-- regular/maximized library + skin settings menu -->

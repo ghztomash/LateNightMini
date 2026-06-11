@@ -10,7 +10,7 @@
         <Size>12f,9min</Size>
       </WidgetGroup>
 
-      <Template src="skin:../LateNightMini/controls/button_2state.xml">
+      <Template src="skin:/controls/button_2state.xml">
         <SetVariable name="TooltipId">maximize_library</SetVariable>
         <SetVariable name="ObjectName">GuiToggleButton</SetVariable>
         <SetVariable name="Size">80f,40f</SetVariable>
@@ -30,7 +30,7 @@
         <Layout>horizontal</Layout>
         <Children>
 
-          <Template src="skin:../LateNightMini/controls/button_2state.xml">
+          <Template src="skin:/controls/button_2state.xml">
             <SetVariable name="TooltipId">show_waveforms</SetVariable>
             <SetVariable name="ObjectName">GuiToggleButton</SetVariable>
             <SetVariable name="Size">80f,40f</SetVariable>
@@ -44,7 +44,7 @@
             <Size>12f,9min</Size>
         </WidgetGroup>
 
-          <Template src="skin:../LateNightMini/controls/button_2state_persist.xml">
+          <Template src="skin:/controls/button_2state_persist.xml">
             <SetVariable name="TooltipId">show_effects</SetVariable>
             <SetVariable name="ObjectName">GuiToggleButton</SetVariable>
             <SetVariable name="Size">59f,40f</SetVariable>
@@ -53,7 +53,7 @@
             <SetVariable name="ConfigKey">[Skin],show_effectrack</SetVariable>
           </Template>
 
-          <Template src="skin:../LateNightMini/controls/button_2state_persist.xml">
+          <Template src="skin:/controls/button_2state_persist.xml">
             <SetVariable name="TooltipId">show_samplers</SetVariable>
             <SetVariable name="ObjectName">GuiToggleButton</SetVariable>
             <SetVariable name="Size">71f,40f</SetVariable>
@@ -76,7 +76,7 @@
         <Layout>horizontal</Layout>
         <Children>
 
-          <Template src="skin:../LateNightMini/controls/button_2state.xml">
+          <Template src="skin:/controls/button_2state.xml">
             <SetVariable name="TooltipId">show_waveforms</SetVariable>
             <SetVariable name="ObjectName">GuiToggleButton</SetVariable>
             <SetVariable name="Size">80f,40f</SetVariable>
@@ -99,9 +99,9 @@
         <ObjectName>AutoDjStatus</ObjectName>
         <Size>30f,40f</Size>
         <NumberPos>3</NumberPos>
-        <PathStatusLight1>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/autodj_status.svg</PathStatusLight1>
-        <PathStatusLight2>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/autodj_status.svg</PathStatusLight2>
-        <PathStatusLight3>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/autodj_status.svg</PathStatusLight3>
+        <PathStatusLight1>skin:/<Variable name="StyleScheme"/>/style/autodj_status.svg</PathStatusLight1>
+        <PathStatusLight2>skin:/<Variable name="StyleScheme"/>/style/autodj_status.svg</PathStatusLight2>
+        <PathStatusLight3>skin:/<Variable name="StyleScheme"/>/style/autodj_status.svg</PathStatusLight3>
         <Connection>
           <ConfigKey>[AutoDJ],enabled</ConfigKey>
         </Connection>
@@ -121,7 +121,7 @@
             = 70x18 available for text -->
         <Children>
           <!-- invisible Rec button -->
-          <Template src="skin:../LateNightMini/controls/button_2state.xml">
+          <Template src="skin:/controls/button_2state.xml">
             <SetVariable name="ObjectName">RecButton</SetVariable>
             <SetVariable name="TooltipId">toggle_recording</SetVariable>
             <SetVariable name="Size">72f,40f</SetVariable>
@@ -155,7 +155,7 @@
           </WidgetGroup><!-- /Rec dot + RecDuration -->
 
           <!-- Rec feedback color -->
-            <Template src="skin:../LateNightMini/controls/button_3state_display.xml">
+            <Template src="skin:/controls/button_3state_display.xml">
             <SetVariable name="ObjectName">RecFeedback</SetVariable>
             <SetVariable name="Size">72f,40f</SetVariable>
             <SetVariable name="ConfigKey">[Recording],toggle_recording</SetVariable>
@@ -172,7 +172,7 @@
         <SizePolicy>f,min</SizePolicy>
         <Layout>vertical</Layout>
         <Children>
-          <Template src="skin:../LateNightMini/mixer/vumeter_main_horizontal.xml"/>
+          <Template src="skin:/mixer/vumeter_main_horizontal.xml"/>
         </Children>
       </WidgetGroup>
       <WidgetGroup><Size>7f,1min</Size></WidgetGroup>
@@ -211,8 +211,8 @@
                   <VuMeter>
                     <TooltipId>audio_latency_usage</TooltipId>
                     <Size>59f,5f</Size>
-                    <PathBack>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/latency_bg.png</PathBack>
-                    <PathVu>skin:../LateNightMini/<Variable name="StyleScheme"/>/style/latency_over.png</PathVu>
+                    <PathBack>skin:/<Variable name="StyleScheme"/>/style/latency_bg.png</PathBack>
+                    <PathVu>skin:/<Variable name="StyleScheme"/>/style/latency_over.png</PathVu>
                     <Horizontal>true</Horizontal>
                     <PeakHoldSize>5</PeakHoldSize>
                     <PeakHoldTime>1000</PeakHoldTime>
@@ -251,10 +251,10 @@
             <ObjectName>Battery</ObjectName>
             <Size>24,24</Size>
             <SizePolicy>f,f</SizePolicy>
-            <PixmapCharged scalemode="STRETCH_ASPECT">skin:../LateNightMini/<Variable name="StyleScheme"/>/style/batt/ic_battery_charged.svg</PixmapCharged>
+            <PixmapCharged scalemode="STRETCH_ASPECT">skin:/<Variable name="StyleScheme"/>/style/batt/ic_battery_charged.svg</PixmapCharged>
             <NumberStates>8</NumberStates>
-            <PixmapsCharging scalemode="STRETCH_ASPECT">skin:../LateNightMini/<Variable name="StyleScheme"/>/style/batt/ic_battery_charging_%1.svg</PixmapsCharging>
-            <PixmapsDischarging scalemode="STRETCH_ASPECT">skin:../LateNightMini/<Variable name="StyleScheme"/>/style/batt/ic_battery_discharging_%1.svg</PixmapsDischarging>
+            <PixmapsCharging scalemode="STRETCH_ASPECT">skin:/<Variable name="StyleScheme"/>/style/batt/ic_battery_charging_%1.svg</PixmapsCharging>
+            <PixmapsDischarging scalemode="STRETCH_ASPECT">skin:/<Variable name="StyleScheme"/>/style/batt/ic_battery_discharging_%1.svg</PixmapsDischarging>
           </Battery>
         </Children>
       </WidgetGroup><!-- BatteryBox -->

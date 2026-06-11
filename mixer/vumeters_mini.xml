@@ -16,7 +16,7 @@
             <Layout>horizontal</Layout>
             <SizePolicy>min,me</SizePolicy>
             <Children>
-              <Template src="skin:../LateNightMini/mixer/vumeter_single.xml">
+              <Template src="skin:/mixer/vumeter_single.xml">
                 <SetVariable name="Group">[Channel1]</SetVariable>
                 <SetVariable name="VuSize">preview</SetVariable>
               </Template>
@@ -28,7 +28,7 @@
             <Layout>horizontal</Layout>
             <SizePolicy>min,me</SizePolicy>
             <Children>
-              <Template src="skin:../LateNightMini/mixer/vumeter_single.xml">
+              <Template src="skin:/mixer/vumeter_single.xml">
                 <SetVariable name="Group">[Channel2]</SetVariable>
                 <SetVariable name="VuSize">preview</SetVariable>
               </Template>

@@ -25,8 +25,8 @@
                     <SizePolicy>me,min</SizePolicy>
                     <Layout>vertical</Layout>
                     <Children>
-                      <Template src="skin:../LateNightMini/decks/row_2_3_TitleArtistTime_compact.xml" />
-                      <Template src="skin:../LateNightMini/decks/row_4_overviewSpinny_compact.xml" />
+                      <Template src="skin:/decks/row_2_3_TitleArtistTime_compact.xml" />
+                      <Template src="skin:/decks/row_4_overviewSpinny_compact.xml" />
                     </Children>
                   </WidgetGroup>
 
@@ -42,7 +42,7 @@
                 </Children>
               </WidgetGroup><!-- DeckRows234 -->
 
-              <Template src="skin:../LateNightMini/decks/row_5_transportLoopJump_compact.xml" />
+              <Template src="skin:/decks/row_5_transportLoopJump_compact.xml" />
 
             </Children>
           </WidgetGroup><!-- DeckRows2345 -->
@@ -69,7 +69,7 @@
             </Connection>
           </WidgetGroup>
 
-          <Template src="skin:../LateNightMini/decks/rate_controls_compact.xml"/>
+          <Template src="skin:/decks/rate_controls_compact.xml"/>
 
         </Children>
       </WidgetGroup><!-- DeckCompactN -->
