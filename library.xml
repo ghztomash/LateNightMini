@@ -106,6 +106,7 @@
 
               <!-- Library Table-->
               <Library>
+                <Size>300me,me</Size>
                 <ShowButtonText>false</ShowButtonText>
                 <TrackTableBackgroundColorOpacity>0.175</TrackTableBackgroundColorOpacity>
                 <!-- Colors for the render modes of the Overview column -->
