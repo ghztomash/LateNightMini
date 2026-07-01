@@ -244,6 +244,33 @@
       <WidgetGroup><Size>7f,1min</Size></WidgetGroup>
 
       <WidgetGroup>
+        <Size>36f,40f</Size>
+        <Layout>vertical</Layout>
+        <Children>
+          <WidgetGroup><Size>1min,2f</Size></WidgetGroup>
+          <PushButton>
+            <TooltipId>skin_settings</TooltipId>
+            <ObjectName>SkinSettingsToggle</ObjectName>
+            <Size>36f,36f</Size>
+            <NumberStates>2</NumberStates>
+            <State>
+              <Number>0</Number>
+            </State>
+            <State>
+              <Number>1</Number>
+            </State>
+            <Connection>
+              <ConfigKey>[Skin],show_settings</ConfigKey>
+              <ButtonState>LeftButton</ButtonState>
+            </Connection>
+          </PushButton>
+          <WidgetGroup><Size>1min,2f</Size></WidgetGroup>
+        </Children>
+      </WidgetGroup>
+
+      <WidgetGroup><Size>7f,1min</Size></WidgetGroup>
+
+      <WidgetGroup>
         <ObjectName>BatteryBox</ObjectName>
         <Layout>horizontal</Layout>
         <Children>

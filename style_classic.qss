@@ -2104,10 +2104,10 @@ WPushButton#BpmLockToggle[value="1"] {
   }
 
 #SkinSettingsToggle[displayValue="0"] {
-  image: url(skin:/classic/buttons/btn__settings_off.svg) no-repeat left top;
+  image: url(skin:/classic/buttons/btn__settings_toolbar.svg) no-repeat center center;
   }
   #SkinSettingsToggle[displayValue="1"] {
-    image: url(skin:/classic/buttons/btn__settings_on.svg) no-repeat left top;
+    image: url(skin:/classic/buttons/btn__settings_toolbar.svg) no-repeat center center;
   }
 
 #ToolbarLogo {

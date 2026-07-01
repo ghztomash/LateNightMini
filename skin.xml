@@ -79,6 +79,8 @@
       <attribute persist="true" config_key="[LateNightMini],expand_samplers_1-4">0</attribute>
       <attribute persist="true" config_key="[LateNightMini],expand_samplers_1-8">0</attribute>
       <attribute persist="true" config_key="[LateNightMini],expand_samplers_9-16">0</attribute>
+    <!-- Skin settings -->
+      <attribute config_key="[Skin],show_settings">0</attribute>
     <!-- Library -->
       <attribute config_key="[Skin],show_maximized_library">0</attribute>
       <attribute persist="true" config_key="[LateNightMini],max_lib_show_decks">1</attribute>
