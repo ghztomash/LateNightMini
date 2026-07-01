@@ -79,8 +79,6 @@
       <attribute persist="true" config_key="[LateNightMini],expand_samplers_1-4">0</attribute>
       <attribute persist="true" config_key="[LateNightMini],expand_samplers_1-8">0</attribute>
       <attribute persist="true" config_key="[LateNightMini],expand_samplers_9-16">0</attribute>
-    <!-- Mic / Aux -->
-      <attribute persist="true" config_key="[Skin],show_microphones">0</attribute>
     <!-- Library -->
       <attribute config_key="[Skin],show_maximized_library">0</attribute>
       <attribute persist="true" config_key="[LateNightMini],max_lib_show_decks">1</attribute>
@@ -496,7 +494,6 @@
 
                         <Template src="skin:/fx_rack.xml"/>
                         <Template src="skin:/samplers_rack.xml"/>
-                        <Template src="skin:/mic_aux_rack.xml"/>
 
                         <SingletonContainer>
                           <ObjectName>LibrarySingleton</ObjectName>
@@ -506,7 +503,7 @@
 
                   </Children>
                 </Splitter>
-                <!-- Decks, Effects, Samplers, Mic/Aux, Library -->
+                <!-- Decks, Effects, Samplers, Library -->
 
                 <!-- Maximized Library & mini decks only -->
                 <WidgetGroup trigger="[Skin],show_maximized_library" on_hide_select="0">
