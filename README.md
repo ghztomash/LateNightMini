@@ -23,6 +23,7 @@ Its intended to be used with a MIDI controller like the DDJ-FLX4 and a [Raspberr
 - Optimized for small touch displays 760x440
 - Waveform overviews
 - Keylock and Quantize buttons
+- Conditional Preferences, Fullscreen, and Quit buttons when supported by Mixxx
 - Built-in themes: `PaleMoon` and `Classic`
 
 ## Installation

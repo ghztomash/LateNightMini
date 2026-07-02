@@ -304,6 +304,36 @@ Description:
             <ObjectName>SkinSettingsSeparator</ObjectName>
             <Size>1min,12f</Size>
           </WidgetGroup>
+
+          <!-- App actions -->
+          <WidgetGroup>
+            <SizePolicy>me,min</SizePolicy>
+            <Layout>horizontal</Layout>
+            <Children>
+              <Template src="skin:/helpers/skin_settings_action_button.xml">
+                <SetVariable name="Text">Fullscreen</SetVariable>
+                <SetVariable name="Action">[Skin],toggle_fullscreen</SetVariable>
+                <SetVariable name="Available">[Skin],toggle_fullscreen_available</SetVariable>
+                <SetVariable name="Width">82f</SetVariable>
+              </Template>
+              <WidgetGroup><Size>2f,0min</Size></WidgetGroup>
+              <Template src="skin:/helpers/skin_settings_action_button.xml">
+                <SetVariable name="Text">Prefs</SetVariable>
+                <SetVariable name="Action">[Skin],show_preferences</SetVariable>
+                <SetVariable name="Available">[Skin],show_preferences_available</SetVariable>
+                <SetVariable name="Width">43f</SetVariable>
+              </Template>
+              <WidgetGroup><Size>2f,0min</Size></WidgetGroup>
+              <Template src="skin:/helpers/skin_settings_action_button.xml">
+                <SetVariable name="Text">Quit</SetVariable>
+                <SetVariable name="Action">[Skin],quit</SetVariable>
+                <SetVariable name="Available">[Skin],quit_available</SetVariable>
+                <SetVariable name="Width">43f</SetVariable>
+              </Template>
+              <WidgetGroup><Size>0me,0min</Size></WidgetGroup>
+            </Children>
+          </WidgetGroup>
+
           <!-- push the settings up, required with Qt6 -->
           <WidgetGroup><Size>0me,0me</Size></WidgetGroup>
 
