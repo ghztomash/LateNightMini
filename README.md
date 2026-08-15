@@ -1,7 +1,9 @@
 # LateNightMini
 
 LateNightMini is a (work in progress) Mixxx skin with a compact workflow for smaller touch displays.
-It is based on the default LateNight skin.
+It is based on the default LateNight skin from main branch.
+
+Requires Mixxx 2.6 or newer.
 
 Its intended to be used with a MIDI controller like the DDJ-FLX4 and a [Raspberry Pi in stand alone mode](https://github.com/ghztomash/StandaloneMixxx).
 
